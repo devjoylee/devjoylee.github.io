@@ -1,17 +1,14 @@
 module.exports = {
-  title: "hoodie",
-  description: "Hello :) I'm Hudi who developed gatsby-starter-hoodie theme.",
-  author: "Hudi",
-  siteUrl: "https://devhudi.github.io/gatsby-starter-hoodie/",
+  title: "joy.blog",
+  description: "FRONTEND DEVELOPER",
+  author: "devJoy",
+  siteUrl: "https://devjoylee.github.io/",
   links: {
-    github: "https://github.com/devHudi",
-    linkedIn: "https://linkedin.com",
-    facebook: "https://www.facebook.com",
-    instagram: "https://www.instagram.com",
-    email: "mailto:devhudi@gmail.com",
+    github: "https://github.com/devjoylee",
+    etc: "https://www.notion.so/devjoylee",
   },
   utterances: {
-    repo: "devHudi/gatsby-starter-hoodie",
+    repo: "devjoylee/devjoylee.github.io",
     type: "pathname",
   },
 }
