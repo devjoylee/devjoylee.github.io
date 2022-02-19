@@ -1,6 +1,6 @@
 ---
 title: "프론트엔드 개발환경 #3 - webpack이란?"
-description: "npm과 npx와 yarn의 차이"
+description: "프론트엔드 개발환경 #3 - webpack이란?"
 date: 2021-11-29
 update: 2021-11-29
 tags:
@@ -13,7 +13,7 @@ series: "프론트엔드 개발환경의 이해"
 
 이전 module 포스팅에서 javascript파일이 여러개로 나뉜 경우 간단하게 `type="module"` 을 `script` 태그에 추가하면 하나의 `script` 태그만으로도 모든 javascript를 연결할 수 있다고 설명한 바 있습니다. (CommonJS / ES Module 모듈화)
 
-👉 [이전 포스팅 바로가기 ](https://devjoylee.github.io/module)
+👉 [이전 포스팅 바로가기 ](https://devjoylee.github.io/dev-module)
 
 ![image](https://images.velog.io/images/joyact/post/dfabe050-6ecc-4706-9e40-208164cb5621/image.png)
 

@@ -1,6 +1,6 @@
 ---
 title: "프론트엔드 개발환경 #2 - 모듈 (Module)"
-description: "npm과 npx와 yarn의 차이"
+description: "프론트엔드 개발환경 #2 - 모듈 (Module)"
 date: 2021-11-21
 update: 2021-11-21
 tags:
