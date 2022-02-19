@@ -1,11 +1,12 @@
 ---
-title: "[Node] npm / npx / yarn"
+title: "프론트엔드 개발환경 #1 - npm / npx / yarn"
 description: "npm과 npx와 yarn의 차이"
 date: 2021-11-17
 update: 2021-11-17
 tags:
-  - nodejs
-series: "프론트엔드"
+  - frontend
+  - development
+series: "프론트엔드 개발환경의 이해"
 ---
 
 ## ✔ npm
