@@ -1,15 +1,15 @@
 ---
 title: "[React] 리액트 시작하기 (without CRA)"
-description: "npm과 npx와 yarn의 차이"
+description: "[React] 리액트 시작하기 (without CRA)"
 date: 2021-12-21
 update: 2021-12-21
 tags:
   - frontend
-  - development
+  - react
 series: "React.js"
 ---
 
-리액트 기반의 프로젝트를 시작할 때 npm으로 create-react-app 패키지를 설치하면 손쉽게 리액트 프로젝트 빌드가 가능합니다. (`npx create-react-app "project-name"`) 하지만 리액트 폴더구조와 빌드 시스템에 대해 자세히 알아보고 싶다면 create-react-app을 사용하지 않고 직접 리액트를 빌드해보는 것을 추천합니다!
+리액트 기반의 프로젝트를 시작할 때 npm으로 create-react-app 패키지를 설치하면 손쉽게 리액트 프로젝트 빌드가 가능합니다. (`npx create-react-app "project-name"`) 하지만 리액트 폴더구조와 빌드 시스템에 대해 자세히 알아보고 싶다면 create-react-app을 사용하지 않고 아래 순서에 따라 직접 리액트를 빌드해보는 것을 추천합니다!
 
 ## 리액트 시작하기 (CRA ❌)
 
@@ -65,7 +65,7 @@ html-webpack-plugin
 
 +) **webpack.config.js 파일 내부의 babel-loader의 옵션으로 추가한 경우 .babelrc 파일 생략 가능!!**
 
-### 5 . `webpack.config.js` 파일 생성
+### 4 . `webpack.config.js` 파일 생성
 
 `webpack`은 웹에서 사용되는 모든 자원(assets)을 묶음으로 번들링 해주는 도구입니다.
 
