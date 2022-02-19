@@ -75,24 +75,22 @@ const SeriesList = ({ seriesList }) => {
     <SeriesListWrapper>
       {seriesList.slice(0, seriesCount).map((series, i) => {
         return (
-          <>
-            <SeriesWrapper>
-              <Title size="bg">
-                <Link to={`/series/${_.replace(series.name, /\s/g, "-")}`}>
-                  {series.name}
-                </Link>
-              </Title>
-              <SeriesInform>
-                <PostCount>{series.posts.length} Posts</PostCount>
-                <span>·</span>
-                <Date>Last updated on {series.lastUpdated}</Date>
-              </SeriesInform>
-            </SeriesWrapper>
+          <SeriesWrapper key={i}>
+            <Title size="bg">
+              <Link to={`/series/${_.replace(series.name, /\s/g, "-")}`}>
+                {series.name}
+              </Link>
+            </Title>
+            <SeriesInform>
+              <PostCount>{series.posts.length} Posts</PostCount>
+              <span>·</span>
+              <Date>Last updated on {series.lastUpdated}</Date>
+            </SeriesInform>
 
             {seriesCount - 1 !== i && seriesList.length - 1 !== i && (
               <Divider mt="48px" mb="32px" />
             )}
-          </>
+          </SeriesWrapper>
         )
       })}
     </SeriesListWrapper>

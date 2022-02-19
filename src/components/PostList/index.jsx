@@ -75,20 +75,17 @@ const PostList = ({ postList }) => {
         const { slug } = post.fields
 
         return (
-          <>
-            <PostWrapper>
-              <Title size="bg">
-                <Link to={slug}>{title}</Link>
-              </Title>
-              <Date>{date}</Date>
-              <Excerpt>{excerpt}</Excerpt>
-              <TagList tagList={tags} />
-            </PostWrapper>
-
+          <PostWrapper key={i}>
+            <Title size="bg">
+              <Link to={slug}>{title}</Link>
+            </Title>
+            <Date>{date}</Date>
+            <Excerpt>{excerpt}</Excerpt>
+            <TagList tagList={tags} />
             {postCount - 1 !== i && postList.length - 1 !== i && (
               <Divider mt="48px" mb="32px" />
             )}
-          </>
+          </PostWrapper>
         )
       })}
     </PostListWrapper>
