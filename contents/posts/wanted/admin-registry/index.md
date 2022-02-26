@@ -180,6 +180,27 @@ export const useForm = requiredList => {
 }
 ```
 
+- useForm 사용
+
+```jsx
+const { addRequired, handleClick } = useForm({
+  category: [],
+  productName: "",
+  description: "",
+  stock: "",
+  option: [],
+})
+
+return (
+  <RegistryForm onSubmit={e => e.preventDefault()}>
+    <TopButton name="저장하기" handleClick={handleClick} type="submit" />
+    <BasicInformation title="상품 기본 정보" addRequired={addRequired} />
+    <OptionMain title="상품 옵션" addRequired={addRequired} />
+    // ...
+  </RegistryForm>
+)
+```
+
 <br />
 
 > REFERENCE<br />Stack Overflow https://stackoverflow.com/questions/60151566/display-file-name-for-custom-input-file-using-reactjs<br />[React] useForm 만들기 https://velog.io/@junghyeonsu/React-useForm

@@ -67,7 +67,7 @@ useEffect(() => {
 
 ### Dependency Array
 
-해당 컴포넌트에 state가 여러개 있는 경우, state가 호출될 때 다른 state값도 다같이 렌더링 된다. 이때 useEffect를 사용해 dependency array에 호출하고자 하는 state값을 전달해주면 다른 불필요한 state 렌더링을 막을 수 있다.
+해당 컴포넌트에 state가 여러개 있는 경우, state가 호출될 때 다른 state값도 다같이 렌더링 됩니다. 이때 useEffect를 사용해 dependency array에 호출하고자 하는 state값을 전달해주면 다른 불필요한 state 렌더링을 막을 수 있습니다.
 
 ```jsx
 const [count, setCount] = useState(1)
