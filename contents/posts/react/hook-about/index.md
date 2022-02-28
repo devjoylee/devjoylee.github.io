@@ -35,43 +35,43 @@ Hook은 리액트 16.8 버전 이후 함수형 컴포넌트에 추가된 기능�
 
 가장 대표적인 Hook으로 상태값을 생성 및 업데이트시켜주는 Hook입니다.
 
-👉 [useState 더 알아보기](https://devjoylee.github.io/react-hook-useState)
+👉 [useState 더 알아보기](https://devjoylee.github.io/hook-useState)
 
 ### useEffect
 
 컴포넌트가 렌더링될 때마다 특정 작업을 수행하도록 설정하는 Hook입니다.
 
-👉 [useEffect 더 알아보기](https://devjoylee.github.io/react-hook-useEffect)
+👉 [useEffect 더 알아보기](https://devjoylee.github.io/hook-useEffect)
 
 ### useReducer
 
 useState처럼 상태관리에 쓰이며 구조가 복잡한 상태관리에 적합한 Hook입니다.
 
-👉 [useReducer 더 알아보기](https://devjoylee.github.io/react-hook-useReducer)
+👉 [useReducer 더 알아보기](https://devjoylee.github.io/hook-useReducer)
 
 ### useRef
 
 렌더링과 관련없는 값을 관리하거나 DOM에 접근이 필요한 경우 사용하는 Hook입니다.
 
-👉 [useRef 더 알아보기](https://devjoylee.github.io/react-hook-useRef)
+👉 [useRef 더 알아보기](https://devjoylee.github.io/hook-useRef)
 
 ### useMemo
 
 렌더링 시 메모리에 값을 저장해두고 필요할 때 불러와서 사용할 수 있도록 하는 Hook입니다.
 
-👉 [useMemo 더 알아보기](https://devjoylee.github.io/react-hook-useMemo)
+👉 [useMemo 더 알아보기](https://devjoylee.github.io/hook-useMemo)
 
 ### useCallback
 
 useMemo와 비슷하나 값이 아닌 함수를 재사용하고자 할 때 사용하는 Hook입니다.
 
-👉 [useCallback 더 알아보기](https://devjoylee.github.io/react-hook-useCallback)
+👉 [useCallback 더 알아보기](https://devjoylee.github.io/hook-useCallback)
 
 ### useContext
 
 전역적으로 사용되는 state나 데이터를 필요한 컴포넌트에 전달하는 Hook입니다.
 
-👉 [useContext 더 알아보기](https://devjoylee.github.io/react-hook-useContext)
+👉 [useContext 더 알아보기](https://devjoylee.github.io/hook-useContext)
 
 <br />
 
