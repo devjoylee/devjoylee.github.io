@@ -45,6 +45,8 @@ function App() {
 }
 ```
 
+<br/>
+
 - `useCallback` 적용 후
 
 ```jsx
@@ -64,3 +66,8 @@ function App() {
   )
 }
 ```
+
+<br/>
+<br/>
+
+> REFERENCE<br/>Youtube 별코딩 https://youtu.be/XfUF9qLa3mU<br/>useCallback 과 useMemo 의 차이 https://basemenks.tistory.com/238
