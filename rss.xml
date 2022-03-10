@@ -1,4 +1,58 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[RSS Feed of joy.blog]]></title><description><![CDATA[FRONTEND DEVELOPER]]></description><link>https://devjoylee.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Fri, 04 Mar 2022 15:35:36 GMT</lastBuildDate><item><title><![CDATA[견적서 게시판 (필터링 기능)]]></title><description><![CDATA[☝ 프로젝트 시작하기 전 이번 프로젝트부터는 javascript가 아닌 typescript를 사용하기로 했다. 타입스크립트가 적용된 CRA를 내려받고 절대경로(ex ) 설정도 해두었다.  타입스크립트 절대경로 설정 (tsconfig.json…]]></description><link>https://devjoylee.github.io/estimate-board/</link><guid isPermaLink="false">https://devjoylee.github.io/estimate-board/</guid><pubDate>Thu, 10 Feb 2022 00:00:00 GMT</pubDate><content:encoded>&lt;h2&gt;☝ 프로젝트 시작하기 전&lt;/h2&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[RSS Feed of joy.blog]]></title><description><![CDATA[FRONTEND DEVELOPER]]></description><link>https://devjoylee.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Thu, 10 Mar 2022 14:43:21 GMT</lastBuildDate><item><title><![CDATA[Redux - 상태 관리 라이브러리]]></title><description><![CDATA[💡 Redux란? Redux란 '상태 관리 라이브러리'로써 기존에 흩어져 있는 state들을 한 곳에 모아 관리하여 예측 불가능한 버그를 최소화하고 효율적으로 state를 사용할 수 있도록 합니다. 또한 Redux는 React 외에도 Angular…]]></description><link>https://devjoylee.github.io/redux-about/</link><guid isPermaLink="false">https://devjoylee.github.io/redux-about/</guid><pubDate>Sun, 20 Feb 2022 00:00:00 GMT</pubDate><content:encoded>&lt;h2&gt;💡 Redux란?&lt;/h2&gt;
+&lt;p&gt;Redux란 &apos;상태 관리 라이브러리&apos;로써 기존에 흩어져 있는 state들을 한 곳에 모아 관리하여 예측 불가능한 버그를 최소화하고 효율적으로 state를 사용할 수 있도록 합니다. 또한 Redux는 React 외에도 Angular, Vue, jQuery 등 다양한 환경에서 사용할 수 있습니다.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://user-images.githubusercontent.com/68415905/157664466-dffebac5-4ead-438f-895b-dd53e3b01b70.jpg&quot; alt=&quot;why-using-redux&quot;&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;React&lt;/code&gt;에서의 상태관리&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;React에서의 상태는 &lt;code class=&quot;language-text&quot;&gt;props&lt;/code&gt;를 통해 각 컴포넌트로 전달됩니다. 특정 컴포넌트에서 state가 변화하면 &lt;code class=&quot;language-text&quot;&gt;props&lt;/code&gt;로 연결된 모든 컴포넌트가 함께 업데이트 됩니다.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;Redux&lt;/code&gt;에서의 상태관리&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Redux에서의 상태는 컴포넌트끼리 공유하지 않고 &lt;code class=&quot;language-text&quot;&gt;store&lt;/code&gt;라는 파일을 거쳐 필요한 컴포넌트로 즉시 전달됩니다. &lt;code class=&quot;language-text&quot;&gt;store&lt;/code&gt;는 앱에서 사용되는 모든 state를 저장하고 관리하는 장소입니다.&lt;/p&gt;
+&lt;h2&gt;📝 Redux의 3원칙&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;애플리케이션 상태는 모두 한 곳에서 집중 관리됩니다. (동기화 필요 ✘)&lt;/li&gt;
+&lt;li&gt;상태는 불변(읽기 전용) 데이터 이며, 오직 액션 만이 상태 교체를 요청 할 수 있습니다. (예측 가능)&lt;/li&gt;
+&lt;li&gt;리듀서(함수)를 통해 상태의 최종 값만 설정합니다. (단순화)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;🔀 Redux 설치&lt;/h2&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;bash&quot;&gt;&lt;pre class=&quot;language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;&lt;span class=&quot;token function&quot;&gt;npm&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;install&lt;/span&gt; redux react-redux&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h2&gt;🧐 Redux의 상태 생성하기&lt;/h2&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;bash&quot;&gt;&lt;pre class=&quot;language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;redux/
+├── actions/
+│   ├── index.js &lt;span class=&quot;token comment&quot;&gt;# 액션 내보내기(export) 파일&lt;/span&gt;
+│   ├── actionTypes.js &lt;span class=&quot;token comment&quot;&gt;# 액션 타입 (액션 타입: 상수)&lt;/span&gt;
+│   ├── auth.js
+│   └── counter.js
+├── reducers/
+│   ├── index.js &lt;span class=&quot;token comment&quot;&gt;# 리듀서 엔트리 ([루트 리듀서:병합] 내보내기)&lt;/span&gt;
+│   ├── auth.js
+│   └── counter.js
+└── store.js &lt;span class=&quot;token comment&quot;&gt;# 스토어 엔트리 (스토어 생성 ← 루트 리듀서)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h3&gt;1. action type 지정&lt;/h3&gt;
+&lt;h3&gt;2. reducer 함수 추가&lt;/h3&gt;
+&lt;p&gt;리듀서는 상태(state)와 액션(action)을 전달 받아 &apos;현재 상태&apos;를 &apos;새로운 상태&apos;로 교체 한 후 반환합니다.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;jsx&quot;&gt;&lt;pre class=&quot;language-jsx&quot;&gt;&lt;code class=&quot;language-jsx&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; initialState &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; reducer &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;state &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; initialState&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; action&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;token keyword&quot;&gt;switch&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;action&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;type&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;token keyword&quot;&gt;case&lt;/span&gt; &lt;span class=&quot;token constant&quot;&gt;INCREASE_COUNT&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt;
+      &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; state &lt;span class=&quot;token operator&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;
+    &lt;span class=&quot;token keyword&quot;&gt;case&lt;/span&gt; &lt;span class=&quot;token constant&quot;&gt;DECREASE_COUNT&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt;
+      &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; state &lt;span class=&quot;token operator&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;
+    &lt;span class=&quot;token keyword&quot;&gt;default&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt;
+      &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; state
+  &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h3&gt;3. store 만들기&lt;/h3&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;jsx&quot;&gt;&lt;pre class=&quot;language-jsx&quot;&gt;&lt;code class=&quot;language-jsx&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt; createStore &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;redux&quot;&lt;/span&gt;
+
+&lt;span class=&quot;token comment&quot;&gt;// Redux 스토어 생성&lt;/span&gt;
+&lt;span class=&quot;token comment&quot;&gt;// - 리듀서 함수를 전달 받음&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; store &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;createStore&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;reducer&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h2&gt;🧐 Redux의 상태 전달하기&lt;/h2&gt;
+&lt;h3&gt;Provider&lt;/h3&gt;
+&lt;h3&gt;useSelector&lt;/h3&gt;
+&lt;h3&gt;useDispatch&lt;/h3&gt;</content:encoded></item><item><title><![CDATA[견적서 게시판 (필터링 기능)]]></title><description><![CDATA[☝ 프로젝트 시작하기 전 이번 프로젝트부터는 javascript가 아닌 typescript를 사용하기로 했다. 타입스크립트가 적용된 CRA를 내려받고 절대경로(ex ) 설정도 해두었다.  타입스크립트 절대경로 설정 (tsconfig.json…]]></description><link>https://devjoylee.github.io/estimate-board/</link><guid isPermaLink="false">https://devjoylee.github.io/estimate-board/</guid><pubDate>Thu, 10 Feb 2022 00:00:00 GMT</pubDate><content:encoded>&lt;h2&gt;☝ 프로젝트 시작하기 전&lt;/h2&gt;
 &lt;p&gt;이번 프로젝트부터는 javascript가 아닌 typescript를 사용하기로 했다. 타입스크립트가 적용된 CRA를 내려받고 절대경로(ex &lt;code class=&quot;language-text&quot;&gt;components/Filter&lt;/code&gt;) 설정도 해두었다.&lt;/p&gt;
 &lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;npx create-react-app [project-name] --template typescript&lt;/code&gt;&lt;/p&gt;
 &lt;ul&gt;
