@@ -168,9 +168,23 @@ ReactDOM.render(
 )
 ```
 
+### - useSelector
+
+> useSelector : store에 저장된 상태값 가져와서 사용
+
+```jsx
+import { useSelector } from "react-redux"
+
+export const mainPage = () => {
+  const user = useSelector(state => state.auth.user)
+
+  return <div>{user}님 환영합니다</div>
+}
+```
+
 ### - useDispatch
 
-> useDispatch : 컴포넌트에서 action을 실행시켜 store로 상태값을 전달
+> useDispatch : action을 실행시켜 store의 상태값 업데이트
 
 ```jsx
 import { useDispatch } from "react-redux"
@@ -189,20 +203,6 @@ export const loginPage = () => {
     <input value={value} type="text"/>
     <button onClick={handleLogIn}>Log In</button>
   )
-}
-```
-
-### - useSelector
-
-> useSelector : store에 저장된 상태값을 조회해서 가져온다.
-
-```jsx
-import { useSelector } from "react-redux"
-
-export const mainPage = () => {
-  const user = useSelector(state => state.auth.user)
-
-  return <div>{user}님 환영합니다</div>
 }
 ```
 
