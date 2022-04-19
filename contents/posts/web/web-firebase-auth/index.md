@@ -1,8 +1,8 @@
 ---
 title: "구글 로그인 기능 with Firebase"
 description: "구글 로그인 기능 with Firebase"
-date: 2022-02-28
-update: 2022-02-28
+date: 2022-03-03
+update: 2022-03-03
 tags:
   - firebase
 series: "Web Hosting"
