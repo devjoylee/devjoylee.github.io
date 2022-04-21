@@ -5,7 +5,8 @@ date: 2022-03-03
 update: 2022-03-03
 tags:
   - firebase
-series: "Web Hosting"
+  - auth
+series: "OAuth Service"
 ---
 
 ## 🎉 firebase 프로젝트 생성
