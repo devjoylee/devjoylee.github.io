@@ -1,8 +1,8 @@
 ---
 title: "구글 로그인 기능 with Firebase"
 description: "구글 로그인 기능 with Firebase"
-date: 2022-03-03
-update: 2022-03-03
+date: 2022-03-12
+update: 2022-03-12
 tags:
   - firebase
   - auth
