@@ -1,6 +1,6 @@
 ---
-title: "OAuth 2.0 의 개념 및 플로우"
-description: "OAuth 2.0 의 개념 및 플로우"
+title: "OAuth 2.0 의 개념 및 용어 정리"
+description: "OAuth 2.0 의 개념 및 용어 정리"
 date: 2022-03-03
 update: 2022-03-03
 tags:
@@ -56,7 +56,7 @@ Client가 Resource Server에게 사용자 정보를 요청하기 위한 입장�
 
 위 Access Token 이 유효기간이 만료 되면, 새로운 Access Token 을 발급 받기 위해 필요한 토큰입니다. 이 토큰에도 유효기간이 있습니다. 각 provider 마다 다릅니다. Access Token 보다는 유효기간이 훨씬 깁니다.
 
-## 🔀 OAuth Flow
+## 🔀 OAuth Flow 예시
 
 ![oauth2-flow](https://user-images.githubusercontent.com/68415905/164474091-491fb63d-bfe0-4fb6-9c11-0af53a674032.png)
 
