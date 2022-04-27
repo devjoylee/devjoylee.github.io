@@ -107,3 +107,6 @@ Server로부터 API 데이터를 불러오는 방법은 2가지가 있습니다.
 2. Server는 새로운 Access Token을 발급하여 Client에 전달합니다.
 
   <img src='https://user-images.githubusercontent.com/68415905/164982319-92220411-7f85-4147-a30b-b20a6f6a7417.JPG' alt='auth' width='800px' />
+<br/><br/>
+
+> REFERENCE<br /> Youtube 생활코딩 OAuth 2.0 https://youtu.be/hm2r6LtUbk8

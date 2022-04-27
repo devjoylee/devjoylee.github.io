@@ -79,3 +79,6 @@ Client가 Resource Server에게 사용자 정보를 요청하기 위한 입장�
 - https가 필수여서 간단해 졌다.(암호화는 https가 담당)
 - 다양한 인증방식을 지원한다.
 - api서버에서 인증서버를 분리 할 수 있도록 해 놓았다.
+  <br/><br/>
+
+> REFERENCE<br /> OAuth2 이해하기 https://devhaks.github.io/2019/05/31/oauth2/ <br/> OAuth 개념 및 플로우 https://miaow-miaow.tistory.com/192
