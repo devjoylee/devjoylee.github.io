@@ -4,27 +4,64 @@ description: "Socket.io 기능 알아보기"
 date: 2022-04-27
 update: 2022-04-27
 tags:
-  - socket.io
-series: "Socket.io"
+  - websocket
+series: "Web Socket"
 ---
 
-## ✨ Socket.io 기본 Set-up
+## 🔎 Socket.io 란?
 
-- Server
+> **Socket.io** 👉 Websocket 기반으로 웹 클라이언트와 서버 간의 실시간 양방향 통신을 가능하게 해주는 Cross-platform WebSocket API
 
-```js
-const io = require("socket.io")(3000, {
-  cors: {
-    origin: ["http://localhost:8080"],
-  },
-})
+Socket.io는 WebSocket을 편리하게 쓸 수 있도록 하는 라이브러리입니다. 브라우저간의 호환성을 높이고 `room`이라는 기능을 이용해 일부 Client에만 데이터를 전송하는 브로드캐스팅이 가능합니다. 아래 구현 예시를 통해 더 자세히 알아보겠습니다.
 
-io.on("connection", socket => {
-  console.log(socket.id)
-})
+### 서버 Socket 구현
+
+1. Socket 패키지를 설치합니다
+
+```bash
+npm i socket.io
 ```
 
-- Client
+2.  app서버 생성 후 소켓IO에 생성한 서버를 전달하고 동작시킨다
+
+```js
+const app = require("express")()
+const SocketIO = require("socket.io")
+
+const server = app.listen(8005, () => {})
+const io = SocketIO(server, { path: "/socket.io" })
+// 서버 연결, path는 프론트와 일치시켜준다.
+// path: 이 경로를 통해 통신을 수행하며, 생략시 디폴트 값은 /socket.io 로 지정된다.
+```
+
+3. 소켓 연결에 성공하면 각 이벤트에 대한 코드를 작성합니다.
+
+   (`addEventListener` 방식을 사용)
+
+```js
+// 웹소켓 연결 시
+io.on('connection', (socket) => {
+  // 연결 종료 Event
+  socket.on('disconnect', () => {
+    console.log('클라이언트 접속 해제', ip, socket.id);
+  }
+
+  // 에러 발생 Event
+  socket.on('error', (error) => {
+    console.error(error);
+  });
+}
+```
+
+### 클라이언트 Socket 구현
+
+1. Socket 패키지를 설치합니다 (client버전)
+
+```bash
+npm i socket.io-client
+```
+
+2. Socket을 불러와서 Server로 데이터를 전송하는 코드를 작성합니다.
 
 ```js
 import { io } from "socket.io-client"
