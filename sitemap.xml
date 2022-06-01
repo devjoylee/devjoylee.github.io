@@ -22,13 +22,14 @@
 <url> <loc>https://devjoylee.github.io/auth-flow/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://devjoylee.github.io/google-auth-firebase/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://devjoylee.github.io/about-socket/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://devjoylee.github.io/use-of-socket/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://devjoylee.github.io/socketio/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://devjoylee.github.io/sockjs/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://devjoylee.github.io/series/프론트엔드-개발환경의-이해</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://devjoylee.github.io/series/React.js</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://devjoylee.github.io/series/원티드-프리온보딩</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://devjoylee.github.io/series/Redux</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://devjoylee.github.io/series/OAuth-Service</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://devjoylee.github.io/series/Socket.io</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://devjoylee.github.io/series/Web-Socket</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://devjoylee.github.io/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://devjoylee.github.io/search/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://devjoylee.github.io/series/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
