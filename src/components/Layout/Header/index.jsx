@@ -22,7 +22,7 @@ const HeaderWrapper = styled.header`
   right: 0;
   padding: 16px;
   background-color: ${props => props.theme.colors.headerBackground};
-  box-shadow: 0 0 8px ${props => props.theme.colors.headerShadow};
+  box-shadow: ${props => props.theme.colors.boxShadow};
   backdrop-filter: blur(5px);
   opacity: ${props => (props.isHidden ? 0 : 1)};
   transition: top 0.5s, opacity 0.5s;

@@ -5,7 +5,6 @@ import _ from "lodash"
 import { Link } from "gatsby"
 
 import Title from "components/Title"
-import Divider from "components/Divider"
 import TagList from "components/TagList"
 
 const PostListWrapper = styled.div`
@@ -17,7 +16,13 @@ const PostListWrapper = styled.div`
 const PostWrapper = styled.div`
   position: relative;
   top: 0;
+  margin-bottom: 15px;
+  padding: 30px;
+  border-radius: 5px;
   transition: all 0.5s;
+
+  box-shadow: ${props => props.theme.colors.boxShadow};
+  background: ${props => props.theme.colors.cardBackground};
 
   @media (max-width: 768px) {
     padding: 0 5px;
@@ -82,9 +87,6 @@ const PostList = ({ postList }) => {
             <Date>{date}</Date>
             <Excerpt>{excerpt}</Excerpt>
             <TagList tagList={tags} />
-            {postCount - 1 !== i && postList.length - 1 !== i && (
-              <Divider mt="48px" mb="32px" />
-            )}
           </PostWrapper>
         )
       })}

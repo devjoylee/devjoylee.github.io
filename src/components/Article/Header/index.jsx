@@ -11,6 +11,9 @@ const Wrapper = styled.div`
   @media (max-width: 768px) {
     padding: 0 15px;
   }
+  hr {
+    margin-top: 15px;
+  }
 `
 
 const ArticleTitle = styled.h1`

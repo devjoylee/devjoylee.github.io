@@ -24,7 +24,8 @@ const BioWrapper = styled.div`
       width: 200px;
       padding: 40px;
       border-radius: 5px;
-      box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+      box-shadow: ${props => props.theme.colors.boxShadow};
+      background: ${props => props.theme.colors.cardBackground};
     }
   }
 `

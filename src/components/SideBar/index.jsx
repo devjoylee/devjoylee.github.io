@@ -11,9 +11,6 @@ const SideBarWrapper = styled.div`
     max-width: 300px;
     margin-left: -150px;
     margin-right: 60px;
-    & + div {
-      margin-top: 15px;
-    }
   }
   @media (max-width: 768px) {
     padding: 0 15px;

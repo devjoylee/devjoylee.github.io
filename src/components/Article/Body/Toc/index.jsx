@@ -14,7 +14,8 @@ const STICK_OFFSET = 100
 const TocWrapper = styled.div`
   position: absolute;
   opacity: 1;
-  left: 100%;
+  top: -120px;
+  left: -350px;
 
   & > div {
     padding-right: 20px;

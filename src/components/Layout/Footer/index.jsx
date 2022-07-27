@@ -11,6 +11,7 @@ const FooterWrapper = styled.footer`
   font-size: 11pt;
   font-weight: lighter;
   color: ${props => props.theme.colors.secondaryText};
+  background: ${props => props.theme.colors.cardBackground};
 
   & > a {
     color: ${props => props.theme.colors.text};

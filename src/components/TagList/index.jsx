@@ -3,7 +3,6 @@ import styled from "styled-components"
 import { Link } from "gatsby"
 
 const TagListWrapper = styled.div`
-  margin-bottom: 16px;
   word-break: break-all;
 `
 
@@ -37,7 +36,7 @@ const spaceToDash = text => {
   return text.replace(/\s+/g, "-")
 }
 
-const TagList = ({ tagList, count, selected, postCount }) => {
+const TagList = ({ tagList, count, selected }) => {
   if (!tagList) return null
 
   if (!count) {
@@ -54,11 +53,6 @@ const TagList = ({ tagList, count, selected, postCount }) => {
 
   return (
     <TagListWrapper>
-      {postCount && (
-        <Link to="/tags">
-          <TagLink selected>all ({postCount})</TagLink>
-        </Link>
-      )}
       {tagList.map((tag, i) => (
         <Link
           key={JSON.stringify({ tag, i })}
