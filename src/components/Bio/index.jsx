@@ -16,9 +16,16 @@ import { siteUrl, description, author, links } from "../../../blog-config"
 const BioWrapper = styled.div`
   display: flex;
   align-items: center;
+  margin-bottom: 30px;
 
-  @media (max-width: 768px) {
-    padding: 0 15px;
+  &.card {
+    @media (min-width: 1300px) {
+      display: block;
+      width: 200px;
+      padding: 40px;
+      border-radius: 5px;
+      box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    }
   }
 `
 
@@ -36,17 +43,27 @@ const Profile = styled.div`
   background-image: url(${profileImageRoot}/profile.png);
   background-size: cover;
   background-position: center;
+
+  @media (min-width: 1300px) {
+    margin: ${props => props.card && "0 auto 20px"};
+  }
+`
+
+const UserInfo = styled.div`
+  @media (min-width: 1300px) {
+    text-align: ${props => props.card && "center"};
+  }
 `
 
 const Author = styled.div`
-  margin-bottom: 4.8px;
+  margin-bottom: 7px;
   font-size: 24px;
-  font-weight: 700;
+  font-weight: 800;
   color: ${props => props.theme.colors.text};
 `
 
 const Description = styled.div`
-  margin-bottom: 11.2px;
+  margin-bottom: 16px;
   line-height: 1.5;
   font-size: 16px;
   color: ${props => props.theme.colors.secondaryText};
@@ -82,14 +99,14 @@ const Link = ({ link, children }) => {
   )
 }
 
-const Bio = () => {
+const Bio = ({ card }) => {
   const { github, kaggle, instagram, facebook, linkedIn, email, etc } = links
 
   return (
-    <BioWrapper id="bio">
-      <Profile />
-      <div>
-        <Author>@{author}</Author>
+    <BioWrapper id="bio" className={`${card && "card"}`}>
+      <Profile card={card} />
+      <UserInfo card={card}>
+        <Author>{author}</Author>
         <Description>{description}</Description>
         <LinksWrapper>
           <Link link={github}>
@@ -114,7 +131,7 @@ const Bio = () => {
             <FaLink />
           </Link>
         </LinksWrapper>
-      </div>
+      </UserInfo>
     </BioWrapper>
   )
 }

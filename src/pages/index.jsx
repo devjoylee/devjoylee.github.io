@@ -1,16 +1,24 @@
 import React from "react"
 import _ from "lodash"
 import { graphql } from "gatsby"
+import styled from "styled-components"
 
 import Layout from "components/Layout"
 import SEO from "components/SEO"
 import Bio from "components/Bio"
 import PostList from "components/PostList"
-import SideTagList from "components/SideTagList"
-import Divider from "components/Divider"
+import TagList from "components/TagList"
+import SideBar from "components/SideBar"
 import VerticalSpace from "components/VerticalSpace"
 
 import { title, description, siteUrl } from "../../blog-config"
+
+const MainWrapper = styled.div`
+  @media (min-width: 1300px) {
+    display: flex;
+    margin-right: -125px;
+  }
+`
 
 const BlogIndex = ({ data }) => {
   const posts = data.allMarkdownRemark.nodes
@@ -30,10 +38,13 @@ const BlogIndex = ({ data }) => {
     <Layout>
       <SEO title={title} description={description} url={siteUrl} />
       <VerticalSpace size={48} />
-      <Bio />
-      <Divider />
-      <SideTagList tags={tags} postCount={posts.length} />
-      <PostList postList={posts} />
+      <MainWrapper>
+        <SideBar>
+          <Bio card />
+          <TagList tagList={tags} postCount={posts.length} count />
+        </SideBar>
+        <PostList postList={posts} />
+      </MainWrapper>
     </Layout>
   )
 }

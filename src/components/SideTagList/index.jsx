@@ -3,14 +3,8 @@ import _ from "lodash"
 import styled from "styled-components"
 import { Link } from "gatsby"
 
-const RelativeWrapper = styled.div`
-  position: relative;
-`
-
 const Wrapper = styled.aside`
-  position: absolute;
-  left: 112%;
-  top: 0px;
+  margin-top: 30px;
   width: 200px;
   height: 100px;
   font-size: 16px;
@@ -44,23 +38,21 @@ const Tag = styled.li`
 
 const SideTagList = ({ tags, postCount }) => {
   return (
-    <RelativeWrapper>
-      <Wrapper>
-        <Title>TAG LIST</Title>
-        <ul>
-          <Tag>
-            <Link to="/tags">all ({postCount})</Link>
+    <Wrapper>
+      <Title>TAG LIST</Title>
+      <ul>
+        <Tag>
+          <Link to="/tags">all ({postCount})</Link>
+        </Tag>
+        {_.map(tags, (tag, i) => (
+          <Tag key={i}>
+            <Link to={`/tags?q=${tag.fieldValue}`}>
+              {tag.fieldValue} ({tag.totalCount})
+            </Link>
           </Tag>
-          {_.map(tags, (tag, i) => (
-            <Tag key={i}>
-              <Link to={`/tags?q=${tag.fieldValue}`}>
-                {tag.fieldValue} ({tag.totalCount})
-              </Link>
-            </Tag>
-          ))}
-        </ul>
-      </Wrapper>
-    </RelativeWrapper>
+        ))}
+      </ul>
+    </Wrapper>
   )
 }
 

@@ -37,7 +37,7 @@ const spaceToDash = text => {
   return text.replace(/\s+/g, "-")
 }
 
-const TagList = ({ tagList, count, selected }) => {
+const TagList = ({ tagList, count, selected, postCount }) => {
   if (!tagList) return null
 
   if (!count) {
@@ -54,6 +54,11 @@ const TagList = ({ tagList, count, selected }) => {
 
   return (
     <TagListWrapper>
+      {postCount && (
+        <Link to="/tags">
+          <TagLink selected>all ({postCount})</TagLink>
+        </Link>
+      )}
       {tagList.map((tag, i) => (
         <Link
           key={JSON.stringify({ tag, i })}
