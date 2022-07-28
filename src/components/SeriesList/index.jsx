@@ -3,25 +3,30 @@ import styled from "styled-components"
 import _ from "lodash"
 
 import { Link } from "gatsby"
-
 import Title from "components/Title"
-import Divider from "components/Divider"
 
 const SeriesListWrapper = styled.div`
-  margin-bottom: 60px;
+  margin: 40px -5px 0;
+  display: flex;
+  flex-wrap: wrap;
+`
+
+const SeriesColumn = styled.div`
+  flex-basis: 33.33%;
+  @media (max-width: 1024px) {
+    flex-basis: 50%;
+  }
   @media (max-width: 768px) {
-    padding: 0 10px;
+    flex-basis: 100%;
   }
 `
 
-const SeriesWrapper = styled.div`
-  position: relative;
-  top: 0;
-  transition: all 0.5s;
-
-  @media (max-width: 768px) {
-    padding: 0 5px;
-  }
+const SeriesCard = styled.div`
+  margin: 0 5px 10px;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: ${props => props.theme.colors.boxShadow};
+  background: ${props => props.theme.colors.cardBackground};
 `
 
 const SeriesInform = styled.div`
@@ -75,22 +80,20 @@ const SeriesList = ({ seriesList }) => {
     <SeriesListWrapper>
       {seriesList.slice(0, seriesCount).map((series, i) => {
         return (
-          <SeriesWrapper key={i}>
-            <Title size="bg">
-              <Link to={`/series/${_.replace(series.name, /\s/g, "-")}`}>
-                {series.name}
-              </Link>
-            </Title>
-            <SeriesInform>
-              <PostCount>{series.posts.length} Posts</PostCount>
-              <span>·</span>
-              <Date>Last updated on {series.lastUpdated}</Date>
-            </SeriesInform>
-
-            {seriesCount - 1 !== i && seriesList.length - 1 !== i && (
-              <Divider mt="48px" mb="32px" />
-            )}
-          </SeriesWrapper>
+          <SeriesColumn key={i}>
+            <SeriesCard>
+              <Title size="md">
+                <Link to={`/series/${_.replace(series.name, /\s/g, "-")}`}>
+                  {series.name}
+                </Link>
+              </Title>
+              <SeriesInform>
+                <PostCount>{series.posts.length} Posts</PostCount>
+                <span>·</span>
+                <Date>Last updated on {series.lastUpdated}</Date>
+              </SeriesInform>
+            </SeriesCard>
+          </SeriesColumn>
         )
       })}
     </SeriesListWrapper>

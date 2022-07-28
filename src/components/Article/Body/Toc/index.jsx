@@ -14,18 +14,24 @@ const STICK_OFFSET = 100
 const TocWrapper = styled.div`
   position: absolute;
   opacity: 1;
-  top: -120px;
-  left: -350px;
+  top: -140px;
+  left: -300px;
+  @media (max-width: 1560px) {
+    left: -240px;
+  }
+  @media (max-width: 1430px) {
+    display: None;
+  }
 
   & > div {
-    padding-right: 20px;
     padding-left: 16px;
-    margin-left: 48px;
     position: relative;
-    width: 240px;
     max-height: calc(100% - 185px);
-    overflow-y: auto;
+    width: 270px;
 
+    @media (max-width: 1560px) {
+      width: 200px;
+    }
     ::-webkit-scrollbar {
       width: 3px;
     }
@@ -43,10 +49,6 @@ const TocWrapper = styled.div`
         position: fixed;
         top: ${STICK_OFFSET}px;
       `}
-  }
-
-  @media (max-width: 1300px) {
-    display: None;
   }
 `
 

@@ -4,7 +4,7 @@ import styled, { css } from "styled-components"
 import useScroll from "hooks/useScroll"
 
 const StyledWrapper = styled.div`
-  position: relative;
+  height: 0;
   opacity: 0;
   transition: 0.35s all ease;
   ${props =>

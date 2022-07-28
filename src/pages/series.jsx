@@ -8,15 +8,13 @@ import { graphql } from "gatsby"
 import Layout from "components/Layout"
 import Title from "components/Title"
 import SeriesList from "components/SeriesList"
-import VerticleSpace from "components/VerticalSpace"
 import NoContent from "components/NoContent"
 
 import { title, description, siteUrl } from "../../blog-config"
 
-const TagListWrapper = styled.div`
-  margin-top: 20px;
-
-  @media (max-width: 768px) {
+const SeriesWrapper = styled.div`
+  margin: 20px 0 60px;
+  @media (max-width: 1024px) {
     padding: 0 15px;
   }
 `
@@ -40,17 +38,15 @@ const SeriesPage = ({ data }) => {
     <Layout>
       <SEO title={title} description={description} url={siteUrl} />
 
-      <TagListWrapper>
+      <SeriesWrapper>
         {series.length > 0 && (
           <Title size="sm">There are {series.length} series.</Title>
         )}
-      </TagListWrapper>
 
-      {series.length === 0 && <NoContent name="series" />}
+        {series.length === 0 && <NoContent name="series" />}
 
-      <VerticleSpace size={32} />
-
-      <SeriesList seriesList={series} />
+        <SeriesList seriesList={series} />
+      </SeriesWrapper>
     </Layout>
   )
 }
@@ -75,7 +71,7 @@ export const pageQuery = graphql`
           slug
         }
         frontmatter {
-          date(formatString: "MMMM DD, YYYY")
+          date(formatString: "MMM DD, YYYY")
           update(formatString: "MMM DD, YYYY")
           title
           tags
