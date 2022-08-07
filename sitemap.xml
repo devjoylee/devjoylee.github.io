@@ -25,6 +25,8 @@
 <url> <loc>https://devjoylee.github.io/socketio/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://devjoylee.github.io/sockjs/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://devjoylee.github.io/node-tutorial-01/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://devjoylee.github.io/node-tutorial-02/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://devjoylee.github.io/node-tutorial-03/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://devjoylee.github.io/series/프론트엔드-개발환경의-이해</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://devjoylee.github.io/series/React.js</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://devjoylee.github.io/series/원티드-프리온보딩</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
