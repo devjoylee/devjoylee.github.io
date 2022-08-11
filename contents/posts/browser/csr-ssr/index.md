@@ -1,8 +1,8 @@
 ---
-title: "브라우저 렌더링 CSR vs SSR"
-description: "브라우저 렌더링 CSR vs SSR"
-date: 2022-10-17
-update: 2022-10-17
+title: "브라우저의 렌더링 종류 CSR vs SSR vs PR"
+description: "브라우저의 렌더링 종류 CSR vs SSR vs PR"
+date: 2022-08-12
+update: 2022-08-12
 tags:
   - webbrowser
 series: "Web Browser"
@@ -89,4 +89,4 @@ Server Side Rendering 기술 중 하나. 예시로 구글 검색 페이지가 �
 
 <br /><br />
 
-> REFERENCE <br /> Node.js 교과서 개정 2판 https://thebook.io/080229/ch01/01/
+> REFERENCE <br /> 네이버 블로그 https://blog.naver.com/jasonrewriter/222220034926 <br /> Youtube DreamCoding https://www.youtube.com/watch?v=iZ9csAfU5Os&t=277s
