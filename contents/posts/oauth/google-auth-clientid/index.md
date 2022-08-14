@@ -11,7 +11,7 @@ series: "OAuth Service"
 
 ## 👨‍💼 Google 사용자 인증 정보 생성
 
-외부 사이트에서 **구글 로그인**과 같은 구글 API를 사용하기 위해서는 사용자 인증 정보(OAuth 클라이언트 ID)를 발급받아야 한다. 발급 절차는 아래와 같다.
+외부 사이트에서 **구글 로그인**과 같은 구글 API를 사용하기 위해서는 사용자 인증 정보(OAuth 클라이언트 ID)를 발급받아야 한다. <br/> 발급 절차는 아래와 같다.
 
 1. Google Cloud Platform에 접속하여 새 프로젝트를 생성한다. 👉 [Google Cloud 바로가기](https://console.cloud.google.com/)
 

@@ -1,6 +1,6 @@
 ---
-title: "[Node] 노드의 주요 특성 (논블로킹 싱글스레드 모델)"
-description: "[Node] 노드의 주요 특성 (논블로킹 싱글스레드 모델)"
+title: "[Node] 노드의 주요 특성 Non Blocking / Single Thread"
+description: "[Node] 노드의 주요 특성 Non Blocking / Single Thread"
 date: 2022-08-02
 update: 2022-08-02
 tags:
@@ -20,15 +20,15 @@ series: "NodeJS"
 
 <img src="https://user-images.githubusercontent.com/68415905/183243780-a2bba588-6e90-4c0b-a704-ea1d9498d882.JPG" width="430" />
 
-### 2. 논블로킹 I/O
+### 2. Non Blocking I/O
 
-> 논블로킹 : 오래 걸리는 함수를 백그라운드로 보낸 후 다음 코드를 먼저 실행하고 나중에 오래 걸리는 함수를 실행하는 방식
+> Non Blocking : 오래 걸리는 함수를 백그라운드로 보낸 후 다음 코드를 먼저 실행하고 나중에 오래 걸리는 함수를 실행하는 방식
 
 블로킹은 이전 작업이 끝난 후 다음 작업을 실행 하는 순차적인 방식이며 논블로킹은 대기없이 모든 작업에 대한 요청을 먼저 받고 동시적으로 실행하는 방식을 뜻합니다. 주로 I/O 작업 (파일 시스템 접근, 네트워크 요청), 압축, 암호화 등이 논블로킹 방식으로 백그라운드에서 병렬로 동시 실행되며 그 외에는 블로킹 방식을 사용합니다. I/O 작업이 많을 때 노드 활용성이 극대화됩니다.
 
 <img src="https://user-images.githubusercontent.com/68415905/183245019-0fa3173a-136f-4790-8c80-b5e4eb05a9a6.JPG" width="1000" />
 
-### 3. 싱글 스레드
+### 3. Single Thread
 
 ### - 프로세스 & 스레드
 
