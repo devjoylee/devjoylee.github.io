@@ -16,6 +16,9 @@ const FooterWrapper = styled.footer`
   & > a {
     color: ${props => props.theme.colors.text};
   }
+  @media (max-width: 768px) {
+    padding: 30px 15px;
+  }
 `
 
 const Footer = () => {

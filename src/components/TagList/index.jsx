@@ -30,6 +30,13 @@ const TagLink = styled.div`
         ? props.theme.colors.hoveredSelectedTagBackground
         : props.theme.colors.hoveredTagBackground};
   }
+
+  @media (max-width: 768px) {
+    padding: 8px 10px;
+    margin-right: 5px;
+    margin-bottom: 6px;
+    font-size: 12px;
+  }
 `
 
 const spaceToDash = text => {

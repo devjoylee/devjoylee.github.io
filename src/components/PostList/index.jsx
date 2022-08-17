@@ -7,11 +7,7 @@ import { Link } from "gatsby"
 import Title from "components/Title"
 import TagList from "components/TagList"
 
-const PostListWrapper = styled.div`
-  @media (max-width: 768px) {
-    padding: 0 10px;
-  }
-`
+const PostListWrapper = styled.div``
 
 const PostWrapper = styled.div`
   position: relative;
@@ -25,7 +21,11 @@ const PostWrapper = styled.div`
   background: ${props => props.theme.colors.cardBackground};
 
   @media (max-width: 768px) {
-    padding: 0 5px;
+    padding: 20px;
+    h1 {
+      font-size: 25px;
+      margin-bottom: 15px;
+    }
   }
 `
 
@@ -41,6 +41,17 @@ const Excerpt = styled.p`
   font-size: 16px;
   color: ${props => props.theme.colors.secondaryText};
   word-break: break-all;
+
+  @media (max-width: 768px) {
+    display: -webkit-box;
+    -webkit-line-clamp: 5;
+    -webkit-box-orient: vertical;
+    margin-bottom: 12px;
+    width: 100%;
+    height: 140px;
+    line-height: 1.7;
+    overflow: hidden;
+  }
 `
 
 const checkIsScrollAtBottom = () => {

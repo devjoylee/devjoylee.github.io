@@ -37,7 +37,7 @@ const BlogIndex = ({ data }) => {
   return (
     <Layout>
       <SEO title={title} description={description} url={siteUrl} />
-      <VerticalSpace size={48} />
+      <VerticalSpace size={40} />
       <MainWrapper>
         <SideBar>
           <Bio card />

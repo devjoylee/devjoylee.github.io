@@ -5,7 +5,9 @@ const BodyWrapper = styled.div`
   margin: 0 auto;
   padding: 80px 0;
   max-width: 1000px;
-  width: 100%;
+  @media (max-width: 1050px) {
+    padding: 55px 15px;
+  }
 `
 
 const Body = ({ children }) => {

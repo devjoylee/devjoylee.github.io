@@ -105,12 +105,6 @@ const ArticleButtonTitle = styled.div`
   overflow: hidden;
 `
 
-const CommentWrapper = styled.div`
-  @media (max-width: 768px) {
-    padding: 0 15px;
-  }
-`
-
 const SpinnerWrapper = styled.div`
   height: 200px;
   display: flex;
@@ -206,10 +200,8 @@ const Footer = ({ previous, next }) => {
         )}
       </ArticleButtonContainer>
       <Bio />
-      <CommentWrapper>
-        <Divider mt="32px" />
-        <Comment />
-      </CommentWrapper>
+      <Divider mt="32px" />
+      <Comment />
     </>
   )
 }
