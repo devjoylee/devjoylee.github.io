@@ -1,6 +1,6 @@
 ---
-title: "NextJS 특징 및 파일 구조"
-description: "NextJS 특징 및 파일 구조"
+title: "NextJS 작동 원리와 파일 구조"
+description: "NextJS 작동 원리와 파일 구조"
 date: 2022-11-05
 update: 2022-11-05
 tags:
