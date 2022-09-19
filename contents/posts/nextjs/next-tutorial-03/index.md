@@ -17,7 +17,6 @@ series: "NextJS"
 
 ```bash
 npm install next-auth
-npm install @next-auth/mongodb-adapter mongodb
 ```
 
 ## 🔎 Next Auth 설정하기
