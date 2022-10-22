@@ -28,7 +28,8 @@
 <url> <loc>https://devjoylee.github.io/node-tutorial-02/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://devjoylee.github.io/node-tutorial-03/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://devjoylee.github.io/node-tutorial-04/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://devjoylee.github.io/node-tutorial-05/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://devjoylee.github.io/rendering/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://devjoylee.github.io/csr-ssr/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://devjoylee.github.io/series/프론트엔드-개발환경의-이해</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://devjoylee.github.io/series/React.js</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://devjoylee.github.io/series/원티드-프리온보딩</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
@@ -36,6 +37,7 @@
 <url> <loc>https://devjoylee.github.io/series/OAuth-Service</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://devjoylee.github.io/series/Web-Socket</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://devjoylee.github.io/series/NodeJS</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://devjoylee.github.io/series/Web-Browser</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://devjoylee.github.io/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://devjoylee.github.io/search/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://devjoylee.github.io/series/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
