@@ -8,7 +8,7 @@ tags:
   - javascript
   - react
   - netlify
-series: "원티드 프리온보딩"
+series: "Project Memoirs"
 ---
 
 ## ☝ 프로젝트 시작하기 전

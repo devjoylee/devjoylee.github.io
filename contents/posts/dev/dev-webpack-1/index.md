@@ -6,7 +6,7 @@ update: 2021-11-29
 tags:
   - frontend
   - development
-series: "프론트엔드 개발환경의 이해"
+series: "프론트엔드 개발환경"
 ---
 
 ## ✨ Webpack 등장 배경
