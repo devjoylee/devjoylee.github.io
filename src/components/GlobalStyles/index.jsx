@@ -9,6 +9,17 @@ const GlobalStyles = createGlobalStyle`
     background: ${props => props.theme.colors.bodyBackground};
   }
 
+  html, 
+  body, 
+  #___gatsby,
+  #gatsby-focus-wrapper{
+    height: 100%;
+  }
+  #gatsby-focus-wrapper{
+    display:flex;
+    flex-direction: column;
+  }
+
 `
 
 export default GlobalStyles
