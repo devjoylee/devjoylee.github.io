@@ -1,4 +1,113 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[RSS Feed of joy.blog]]></title><description><![CDATA[FRONTEND DEVELOPER]]></description><link>https://devjoylee.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Thu, 03 Nov 2022 15:08:56 GMT</lastBuildDate><item><title><![CDATA[브라우저의 렌더링 종류 CSR vs SSR vs PR]]></title><description><![CDATA[💻 CSR (Client Side Rendering) CSR은 JavaScript…]]></description><link>https://devjoylee.github.io/csr-ssr/</link><guid isPermaLink="false">https://devjoylee.github.io/csr-ssr/</guid><pubDate>Fri, 12 Aug 2022 00:00:00 GMT</pubDate><content:encoded>&lt;h2&gt;💻 CSR (Client Side Rendering)&lt;/h2&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[RSS Feed of joy.blog]]></title><description><![CDATA[FRONTEND DEVELOPER]]></description><link>https://devjoylee.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Tue, 08 Nov 2022 11:22:39 GMT</lastBuildDate><item><title><![CDATA[NextJS 특징 및 파일 구조]]></title><description><![CDATA[🧐 NextJS란? NextJS : React에서 서버 사이드 렌더링을 간편하게 해주는 프레임워크 작동 원리 Next.js는, 기본적으로 서버측에서 React코드를 실행한다. React.js를 서버측에서 pre-rendering하여 html…]]></description><link>https://devjoylee.github.io/next-tutorial-01/</link><guid isPermaLink="false">https://devjoylee.github.io/next-tutorial-01/</guid><pubDate>Sat, 05 Nov 2022 00:00:00 GMT</pubDate><content:encoded>&lt;h2&gt;🧐 NextJS란?&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;NextJS : React에서 서버 사이드 렌더링을 간편하게 해주는 프레임워크&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3&gt;작동 원리&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;Next.js는, 기본적으로 서버측에서 React코드를 실행한다.&lt;/li&gt;
+&lt;li&gt;React.js를 서버측에서 pre-rendering하여 html을 생성하고, 브라우저로 보내준다.&lt;/li&gt;
+&lt;li&gt;그 후, 브라우저에서 React를 사용해 웹페이지를 완성한다. ➡ 결과 : 속도가 빠르고 SEO에 유리하다&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3&gt;주요 기능&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;직관적인 페이지 기반 라우팅 시스템( 동적 경로 지원 포함 )&lt;/li&gt;
+&lt;li&gt;사전 렌더링, 정적 생성(SSG) 및 서버 측 렌더링(SSR) 모두 페이지 단위로 지원된다.&lt;/li&gt;
+&lt;li&gt;자동 코드 분할! ( 빠른 로딩 )&lt;/li&gt;
+&lt;li&gt;최적화된 프리페치를 통한 클라이언트 측 라우팅&lt;/li&gt;
+&lt;li&gt;내장 CSS 및 Sass 지원 및 모든 CSS-in-JS 라이브러리 지원&lt;/li&gt;
+&lt;li&gt;Fast Refresh를 지원한다. ( 빠른 리프레쉬 )&lt;/li&gt;
+&lt;li&gt;Serverless Functions로 API 엔드포인트를 빌드하기 위한 API 경로&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;🔎 React와 NextJs의 차이점&lt;/h2&gt;
+&lt;h3&gt;1. library vs framework&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;React (library) : 필요할 때 불러와서 사용. 라우팅, 폴더 구조 등을 사용자가 직접 정해서 사용한다.&lt;/li&gt;
+&lt;li&gt;NextJS (framework) : 정해진 규칙에 맞춰 코드를 작성하면 앱이 실행됨. 라우팅, 폴더 구조를 커스텀할 수 없다.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;2. CSR vs SSR&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;React (CSR) : 브라우저가 javascript 파일에서 UI를 모두 다운받은 후 페이지가 출력된다.&lt;/li&gt;
+&lt;li&gt;NextJS (SSR) : 페이지가 먼저 렌더링된 후 (pre-rendering) API 등 필요한 javascript는 나중에 가져온다&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;📚 File Structure&lt;/h2&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;js&quot;&gt;&lt;pre class=&quot;language-js&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;public&lt;/span&gt;  &lt;span class=&quot;token comment&quot;&gt;// 어플리케이션에 사용되는 정적 파일들&lt;/span&gt;
+└── assets
+     ├── images
+     └── icons
+
+pages   &lt;span class=&quot;token comment&quot;&gt;// 페이지 라우팅 (파일/폴더명으로 url 결정)&lt;/span&gt;
+  ├── api
+  ├── product
+  │     └── &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;id&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;tsx
+  ├── _app&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;tsx
+  ├── _document&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;tsx
+  └── index&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;tsx
+
+src     &lt;span class=&quot;token comment&quot;&gt;// 그 외 필요한 sources 모음&lt;/span&gt;
+  ├── components
+  │   ├── common
+  │   └── layout
+  ├── styles
+  │   └── globals&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;css
+  ├── hooks
+  ├── types
+  └── utils&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h3&gt;_app.tsx&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;NextJS 실행 시 가장 먼저 실행되는 파일&lt;/li&gt;
+&lt;li&gt;모든 페이지에서 쓰는 스타일, 레이아웃을 적용시키는 곳 (ex global.css)&lt;/li&gt;
+&lt;li&gt;google analytics , 검색엔진, 스크립트 분석 등에 사용&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;js&quot;&gt;&lt;pre class=&quot;language-js&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;import&lt;/span&gt; type &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt; AppProps &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;next/app&quot;&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt; AppLayout &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;@components&quot;&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;@styles/globals.scss&quot;&lt;/span&gt;
+
+&lt;span class=&quot;token keyword&quot;&gt;export&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;default&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;MyApp&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token parameter&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt; Component&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; pageProps &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; AppProps&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;
+    &lt;span class=&quot;token operator&quot;&gt;&amp;lt;&lt;/span&gt;AppLayout&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt;
+      &lt;span class=&quot;token operator&quot;&gt;&amp;lt;&lt;/span&gt;Component &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;...&lt;/span&gt;pageProps&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt;
+    &lt;span class=&quot;token operator&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;/&lt;/span&gt;AppLayout&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt;
+  &lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h3&gt;_document.tsx&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;_app.js 다음으로 실행되는 파일&lt;/li&gt;
+&lt;li&gt;index.html 파일과 같은 역할 (&lt;code class=&quot;language-text&quot;&gt;&amp;lt;meta&gt;&lt;/code&gt; 태그 &amp;#x26; &lt;code class=&quot;language-text&quot;&gt;&amp;lt;link&gt;&lt;/code&gt; 태그 추가)&lt;/li&gt;
+&lt;li&gt;html, body와 같은 기본 태그들의 속성을 지정하여 어플리케이션의 구조를 만들어 주는 파일&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;js&quot;&gt;&lt;pre class=&quot;language-js&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt; Html&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; Head&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; Main&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; NextScript &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;next/document&quot;&lt;/span&gt;
+
+&lt;span class=&quot;token keyword&quot;&gt;export&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;default&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;Document&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;
+    &lt;span class=&quot;token operator&quot;&gt;&amp;lt;&lt;/span&gt;Html&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt;
+      &lt;span class=&quot;token operator&quot;&gt;&amp;lt;&lt;/span&gt;Head&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt;
+        &lt;span class=&quot;token operator&quot;&gt;&amp;lt;&lt;/span&gt;meta name&lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;description&quot;&lt;/span&gt; content&lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;Generated by create next app&quot;&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt;
+        &lt;span class=&quot;token operator&quot;&gt;&amp;lt;&lt;/span&gt;link rel&lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;icon&quot;&lt;/span&gt; href&lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;/favicon.ico&quot;&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt;
+      &lt;span class=&quot;token operator&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;/&lt;/span&gt;Head&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt;
+      &lt;span class=&quot;token operator&quot;&gt;&amp;lt;&lt;/span&gt;body&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt;
+        &lt;span class=&quot;token operator&quot;&gt;&amp;lt;&lt;/span&gt;Main &lt;span class=&quot;token operator&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt;
+        &lt;span class=&quot;token operator&quot;&gt;&amp;lt;&lt;/span&gt;NextScript &lt;span class=&quot;token operator&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt;
+      &lt;span class=&quot;token operator&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;/&lt;/span&gt;body&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt;
+    &lt;span class=&quot;token operator&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;/&lt;/span&gt;Html&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt;
+  &lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h3&gt;pages&lt;/h3&gt;
+&lt;p&gt;React에서는 react-router-dom을 설치하고 라우터를 직접 만들어야하지만 NextJS는 그렇지 않다.
+&lt;br/&gt; pages폴더 안에 파일이나 폴더를 만들면 라우팅 설정이 자동으로 이루어진다.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;index.tsx 파일 : 메인 페이지 (localhost:3000)&lt;/li&gt;
+&lt;li&gt;파일/폴더명 = URL 주소 ➡ 파일/폴더명에 해당하는 주소로 페이지가 라우팅된다.&lt;/li&gt;
+&lt;li&gt;컴포넌트의 이름은 중요하지 않으나 반드시 &lt;code class=&quot;language-text&quot;&gt;export default&lt;/code&gt; 로 컴포넌트 작성 ❗❗.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;js&quot;&gt;&lt;pre class=&quot;language-js&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;pages
+  ├── about
+  │     ├── index&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;tsx        &lt;span class=&quot;token comment&quot;&gt;// localhost:3000/about&lt;/span&gt;
+  │     └── &lt;span class=&quot;token keyword&quot;&gt;new&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;tsx          &lt;span class=&quot;token comment&quot;&gt;// localhost:3000/about/new&lt;/span&gt;
+  ├── product
+  │     └── &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;id&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;
+  │          ├── index&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;tsx   &lt;span class=&quot;token comment&quot;&gt;// localhost:3000/product/25&lt;/span&gt;
+  │          └── edit&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;tsx    &lt;span class=&quot;token comment&quot;&gt;// localhost:3000/product/25/edit&lt;/span&gt;
+  └── index&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;tsx              &lt;span class=&quot;token comment&quot;&gt;// localhost:3000&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content:encoded></item><item><title><![CDATA[브라우저의 렌더링 종류 CSR vs SSR vs PR]]></title><description><![CDATA[💻 CSR (Client Side Rendering) CSR은 JavaScript…]]></description><link>https://devjoylee.github.io/csr-ssr/</link><guid isPermaLink="false">https://devjoylee.github.io/csr-ssr/</guid><pubDate>Fri, 12 Aug 2022 00:00:00 GMT</pubDate><content:encoded>&lt;h2&gt;💻 CSR (Client Side Rendering)&lt;/h2&gt;
 &lt;p&gt;CSR은 JavaScript를 사용하여 직접 웹브라우저에서 페이지를 렌더링하는 것을 의미한다. &lt;br/&gt;
 모든 로직 및 데이터 가져오기, 템플릿 및 라우팅은 서버가 아닌 클라이언트(브라우저)에서 처리된다.&lt;/p&gt;
 &lt;h3&gt;동작 순서&lt;/h3&gt;
