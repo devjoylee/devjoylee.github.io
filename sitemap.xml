@@ -20,6 +20,7 @@
 <url> <loc>https://devjoylee.github.io/redux-thunk/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://devjoylee.github.io/about-auth/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://devjoylee.github.io/auth-flow/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://devjoylee.github.io/google-auth-clientid/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://devjoylee.github.io/google-auth-firebase/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://devjoylee.github.io/about-socket/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://devjoylee.github.io/socketio/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
@@ -32,7 +33,8 @@
 <url> <loc>https://devjoylee.github.io/csr-ssr/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://devjoylee.github.io/next-tutorial-01/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://devjoylee.github.io/cyworld-clone/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://devjoylee.github.io/next/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://devjoylee.github.io/next-tutorial-02/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://devjoylee.github.io/next-tutorial-03/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://devjoylee.github.io/series/프론트엔드-개발환경</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://devjoylee.github.io/series/React.js</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://devjoylee.github.io/series/Project-Memoirs</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>

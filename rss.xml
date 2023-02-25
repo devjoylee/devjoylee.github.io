@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[RSS Feed of joy.blog]]></title><description><![CDATA[FRONTEND DEVELOPER]]></description><link>https://devjoylee.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Tue, 22 Nov 2022 14:43:53 GMT</lastBuildDate><item><title><![CDATA[싸이월드 클론 built in NextJS]]></title><description><![CDATA[😎 프로젝트 소개 NextJS와 GraphQL로 빌드한 싸이월드 클론 프로젝트 제작 기간 : 2022.10.14 - 2022.11.03 Github Repo 프로젝트 배포 링크 🚀 프로젝트를 시작하기 전에.. 1. NextJS & GraphQL…]]></description><link>https://devjoylee.github.io/cyworld-clone/</link><guid isPermaLink="false">https://devjoylee.github.io/cyworld-clone/</guid><pubDate>Thu, 10 Nov 2022 00:00:00 GMT</pubDate><content:encoded>&lt;img src=&apos;https://user-images.githubusercontent.com/68415905/201012943-51174d9b-43fa-4103-80da-1469f2aed925.png&apos; alt=&apos;&apos; width=&apos;800&apos; align=&apos;center&apos;&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[RSS Feed of joy.blog]]></title><description><![CDATA[FRONTEND DEVELOPER]]></description><link>https://devjoylee.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Sat, 25 Feb 2023 08:17:48 GMT</lastBuildDate><item><title><![CDATA[싸이월드 클론 built in NextJS]]></title><description><![CDATA[😎 프로젝트 소개 NextJS와 GraphQL로 빌드한 싸이월드 클론 프로젝트 제작 기간 : 2022.10.14 - 2022.11.03 Github Repo 프로젝트 배포 링크 🚀 프로젝트를 시작하기 전에.. 1. NextJS & GraphQL…]]></description><link>https://devjoylee.github.io/cyworld-clone/</link><guid isPermaLink="false">https://devjoylee.github.io/cyworld-clone/</guid><pubDate>Thu, 10 Nov 2022 00:00:00 GMT</pubDate><content:encoded>&lt;img src=&apos;https://user-images.githubusercontent.com/68415905/201012943-51174d9b-43fa-4103-80da-1469f2aed925.png&apos; alt=&apos;&apos; width=&apos;800&apos; align=&apos;center&apos;&gt;
 &lt;h2&gt;😎 프로젝트 소개&lt;/h2&gt;
 &lt;blockquote&gt;
 &lt;p&gt;NextJS와 GraphQL로 빌드한 싸이월드 클론 프로젝트&lt;/p&gt;
@@ -172,43 +172,68 @@ src
   &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;token literal-property property&quot;&gt;id&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;9&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token literal-property property&quot;&gt;title&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;그때 그 순간 그대로&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token literal-property property&quot;&gt;artist&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;WSG워너비&apos;&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
   &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;token literal-property property&quot;&gt;id&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;10&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token literal-property property&quot;&gt;title&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;애인있어요&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token literal-property property&quot;&gt;artist&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;이은미&apos;&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
 &lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;br /&gt;</content:encoded></item><item><title><![CDATA[NextJS]]></title><link>https://devjoylee.github.io/next/</link><guid isPermaLink="false">https://devjoylee.github.io/next/</guid><pubDate>Thu, 10 Nov 2022 00:00:00 GMT</pubDate><content:encoded>&lt;!-- - **Routing**
+&lt;br /&gt;</content:encoded></item><item><title><![CDATA[NextJS]]></title><description><![CDATA[Routing  태그를 사용하면 페이지가 새로고침되어 리렌더링이 발생해 적합하지 않음 next가 제공하는 태그를 사용해야한다 Link 태그에는 속성을 줄 수 없으므로 내부에  로 한번 더 감싸고 속성을 추가해야한다 SEO Image
+next…]]></description><link>https://devjoylee.github.io/next-tutorial-02/</link><guid isPermaLink="false">https://devjoylee.github.io/next-tutorial-02/</guid><pubDate>Thu, 10 Nov 2022 00:00:00 GMT</pubDate><content:encoded>&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Routing&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;a&lt;/code&gt; 태그를 사용하면 페이지가 새로고침되어 리렌더링이 발생해 적합하지 않음&lt;/p&gt;
+&lt;p&gt;next가 제공하는 &lt;code class=&quot;language-text&quot;&gt;Link&lt;/code&gt;태그를 사용해야한다&lt;/p&gt;
+&lt;p&gt;Link 태그에는 속성을 줄 수 없으므로 내부에 &lt;a&gt; 로 한번 더 감싸고 속성을 추가해야한다&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;jsx&quot;&gt;&lt;pre class=&quot;language-jsx&quot;&gt;&lt;code class=&quot;language-jsx&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;import&lt;/span&gt; Link &lt;span class=&quot;token keyword&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;next/link&quot;&lt;/span&gt;
 
-`a` 태그를 사용하면 페이지가 새로고침되어 리렌더링이 발생해 적합하지 않음
+&lt;span class=&quot;token keyword&quot;&gt;export&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;default&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;Navbar&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;
+    &lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;nav&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token plain-text&quot;&gt;
+      &lt;/span&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;token class-name&quot;&gt;Link&lt;/span&gt;&lt;/span&gt; &lt;span class=&quot;token attr-name&quot;&gt;href&lt;/span&gt;&lt;span class=&quot;token attr-value&quot;&gt;&lt;span class=&quot;token punctuation attr-equals&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;/&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token plain-text&quot;&gt;
+        &lt;/span&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;a&lt;/span&gt; &lt;span class=&quot;token attr-name&quot;&gt;className&lt;/span&gt;&lt;span class=&quot;token attr-value&quot;&gt;&lt;span class=&quot;token punctuation attr-equals&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;home&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token plain-text&quot;&gt;Home&lt;/span&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;/&lt;/span&gt;a&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token plain-text&quot;&gt;
+      &lt;/span&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;/&lt;/span&gt;&lt;span class=&quot;token class-name&quot;&gt;Link&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token plain-text&quot;&gt;
+      &lt;/span&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;token class-name&quot;&gt;Link&lt;/span&gt;&lt;/span&gt; &lt;span class=&quot;token attr-name&quot;&gt;href&lt;/span&gt;&lt;span class=&quot;token attr-value&quot;&gt;&lt;span class=&quot;token punctuation attr-equals&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;/about&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token plain-text&quot;&gt;
+        &lt;/span&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;a&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token plain-text&quot;&gt;About&lt;/span&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;/&lt;/span&gt;a&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token plain-text&quot;&gt;
+      &lt;/span&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;/&lt;/span&gt;&lt;span class=&quot;token class-name&quot;&gt;Link&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token plain-text&quot;&gt;
+    &lt;/span&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;/&lt;/span&gt;nav&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;
+  &lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;ul&gt;
+&lt;li&gt;SEO&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;js&quot;&gt;&lt;pre class=&quot;language-js&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;export&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;token function-variable function&quot;&gt;SEO&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token parameter&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt; title &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;token literal-property property&quot;&gt;title&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; string &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&gt;&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; text &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; title &lt;span class=&quot;token operator&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot; | Cyworld via Numble&quot;&lt;/span&gt;
+  &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;
+    &lt;span class=&quot;token operator&quot;&gt;&amp;lt;&lt;/span&gt;Head&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt;
+      &lt;span class=&quot;token operator&quot;&gt;&amp;lt;&lt;/span&gt;title&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;text&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;/&lt;/span&gt;title&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt;
+    &lt;span class=&quot;token operator&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;/&lt;/span&gt;Head&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt;
+  &lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;ul&gt;
+&lt;li&gt;Image
+next.config.js&lt;/li&gt;
+&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[Next-Auth]]></title><description><![CDATA[Next-Auth 란? Next.js에서 소셜 로그인 기능을 쉽게 추가하고 관리할 수 있는 Node.js 라이브러리 (Authentication) https://next-auth.js.org/getting-started/example ADD API…]]></description><link>https://devjoylee.github.io/next-tutorial-03/</link><guid isPermaLink="false">https://devjoylee.github.io/next-tutorial-03/</guid><pubDate>Thu, 10 Nov 2022 00:00:00 GMT</pubDate><content:encoded>&lt;h2&gt;Next-Auth 란?&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Next.js에서 소셜 로그인 기능을 쉽게 추가하고 관리할 수 있는 Node.js 라이브러리 (Authentication)&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;a href=&quot;https://next-auth.js.org/getting-started/example&quot;&gt;https://next-auth.js.org/getting-started/example&lt;/a&gt;&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;bash&quot;&gt;&lt;pre class=&quot;language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;&lt;span class=&quot;token function&quot;&gt;npm&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;install&lt;/span&gt; next-auth @next-auth/mongodb-adapter mongodb&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h2&gt;ADD API route&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;nextauth API 만들기&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;page 폴더 내에 &lt;code class=&quot;language-text&quot;&gt;api/auth/[...nextauth].js&lt;/code&gt; 파일을 생성한다. 이 파일은 &lt;code class=&quot;language-text&quot;&gt;/api/auth/*&lt;/code&gt; 의 경로로 요청되는 모든 request를 처리한다.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;js&quot;&gt;&lt;pre class=&quot;language-js&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;import&lt;/span&gt; NextAuth &lt;span class=&quot;token keyword&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;next-auth&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;import&lt;/span&gt; GoogleProvider &lt;span class=&quot;token keyword&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;next-auth/providers/google&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
 
-next가 제공하는 `Link`태그를 사용해야한다
-
-Link 태그에는 속성을 줄 수 없으므로 내부에 &lt;a&gt; 로 한번 더 감싸고 속성을 추가해야한다
-
-```jsx
-import Link from &quot;next/link&quot;
-
-export default function Navbar() {
-  return (
-    &lt;nav&gt;
-      &lt;Link href=&quot;/&quot;&gt;
-        &lt;a className=&quot;home&quot;&gt;Home&lt;/a&gt;
-      &lt;/Link&gt;
-      &lt;Link href=&quot;/about&quot;&gt;
-        &lt;a&gt;About&lt;/a&gt;
-      &lt;/Link&gt;
-    &lt;/nav&gt;
-  )
-}
-```
-
-- SEO
-
-```js
-export const SEO = ({ title }: { title: string }) =&gt; {
-  const text = title + &quot; | Cyworld via Numble&quot;
-  return (
-    &lt;Head&gt;
-      &lt;title&gt;{text}&lt;/title&gt;
-    &lt;/Head&gt;
-  )
-}
-``` --&gt;</content:encoded></item><item><title><![CDATA[NextJS 특징 및 파일 구조]]></title><description><![CDATA[🧐 NextJS란? NextJS : React에서 서버 사이드 렌더링을 간편하게 해주는 프레임워크 작동 원리 Next.js는, 기본적으로 서버측에서 React코드를 실행한다. React.js를 서버측에서 pre-rendering하여 html…]]></description><link>https://devjoylee.github.io/next-tutorial-01/</link><guid isPermaLink="false">https://devjoylee.github.io/next-tutorial-01/</guid><pubDate>Sat, 05 Nov 2022 00:00:00 GMT</pubDate><content:encoded>&lt;h2&gt;🧐 NextJS란?&lt;/h2&gt;
+&lt;span class=&quot;token keyword&quot;&gt;export&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;default&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;NextAuth&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;token comment&quot;&gt;// Configure one or more authentication providers&lt;/span&gt;
+  &lt;span class=&quot;token literal-property property&quot;&gt;providers&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;
+    &lt;span class=&quot;token function&quot;&gt;GoogleProvider&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+      &lt;span class=&quot;token literal-property property&quot;&gt;clientId&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; process&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;env&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token constant&quot;&gt;GOOGLE_CLIENT_ID&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;!&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+      &lt;span class=&quot;token literal-property property&quot;&gt;clientSecret&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; process&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;env&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token constant&quot;&gt;GOOGLE_CLIENT_SECRET&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;!&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+    &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+    &lt;span class=&quot;token comment&quot;&gt;// add more providers here&lt;/span&gt;
+  &lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;ol start=&quot;2&quot;&gt;
+&lt;li&gt;next.js에 nextauth 연결하기&lt;/li&gt;
+&lt;/ol&gt;</content:encoded></item><item><title><![CDATA[NextJS 특징 및 파일 구조]]></title><description><![CDATA[🧐 NextJS란? NextJS : React에서 서버 사이드 렌더링을 간편하게 해주는 프레임워크 작동 원리 Next.js는, 기본적으로 서버측에서 React코드를 실행한다. React.js를 서버측에서 pre-rendering하여 html…]]></description><link>https://devjoylee.github.io/next-tutorial-01/</link><guid isPermaLink="false">https://devjoylee.github.io/next-tutorial-01/</guid><pubDate>Sat, 05 Nov 2022 00:00:00 GMT</pubDate><content:encoded>&lt;h2&gt;🧐 NextJS란?&lt;/h2&gt;
 &lt;blockquote&gt;
 &lt;p&gt;NextJS : React에서 서버 사이드 렌더링을 간편하게 해주는 프레임워크&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -830,7 +855,7 @@ Spring을 사용할땐 socket.js, stomp.js를 사용합니다.&lt;/p&gt;
 &lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;REFERENCE&lt;br /&gt; Learn Socket.io In 30 Minutes &lt;a href=&quot;https://youtu.be/ZKEqqIO7n-k&quot;&gt;https://youtu.be/ZKEqqIO7n-k&lt;/a&gt; &lt;br/&gt; 소켓(Socket) 통신이란? &lt;a href=&quot;https://helloworld-88.tistory.com/215&quot;&gt;https://helloworld-88.tistory.com/215&lt;/a&gt;&lt;/p&gt;
-&lt;/blockquote&gt;</content:encoded></item><item><title><![CDATA[구글 로그인 기능 with Firebase]]></title><description><![CDATA[🎉 firebase 프로젝트 생성 Firebase 에 접속하여 새로운 프로젝트를 생성합니다. 👉 Firebase 바로가기 프로젝트 이름을 입력합니다. Analytics가 필요하지 않으면 OFF 프로젝트에 해당하는 앱을 추가합니다. (ios…]]></description><link>https://devjoylee.github.io/google-auth-firebase/</link><guid isPermaLink="false">https://devjoylee.github.io/google-auth-firebase/</guid><pubDate>Sat, 12 Mar 2022 00:00:00 GMT</pubDate><content:encoded>&lt;h2&gt;🎉 firebase 프로젝트 생성&lt;/h2&gt;
+&lt;/blockquote&gt;</content:encoded></item><item><title><![CDATA[구글 로그인 기능 with Firebase]]></title><description><![CDATA[🎉 firebase 프로젝트 생성 Firebase 에 접속하여 새로운 프로젝트를 생성합니다. 👉 Firebase 바로가기 프로젝트 이름을 입력합니다. Analytics가 필요하지 않으면 OFF 프로젝트에 해당하는 앱을 추가합니다. (ios…]]></description><link>https://devjoylee.github.io/google-auth-firebase/</link><guid isPermaLink="false">https://devjoylee.github.io/google-auth-firebase/</guid><pubDate>Thu, 17 Mar 2022 00:00:00 GMT</pubDate><content:encoded>&lt;h2&gt;🎉 firebase 프로젝트 생성&lt;/h2&gt;
 &lt;ol&gt;
 &lt;li&gt;Firebase 에 접속하여 새로운 프로젝트를 생성합니다. 👉 &lt;a href=&quot;https://console.firebase.google.com/u/1/&quot;&gt;Firebase 바로가기&lt;/a&gt;&lt;/li&gt;
 &lt;/ol&gt;
@@ -903,6 +928,44 @@ Spring을 사용할땐 socket.js, stomp.js를 사용합니다.&lt;/p&gt;
 &lt;br /&gt;
 &lt;blockquote&gt;
 &lt;p&gt;REFERENCE&lt;br /&gt; React에서 Firebase Auth를 사용한 로그인 구글 로그인 구현 &lt;a href=&quot;https://koras02.tistory.com/58&quot;&gt;https://koras02.tistory.com/58&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;</content:encoded></item><item><title><![CDATA[Google OAuth Client ID 만들기]]></title><description><![CDATA[👨‍💼 Google 사용자 인증 정보 생성 외부 사이트에서 구글 로그인과 같은 구글 API를 사용하기 위해서는 사용자 인증 정보(OAuth 클라이언트 ID)를 발급받아야 한다. 발급 절차는 아래와 같다. Google Cloud Platform…]]></description><link>https://devjoylee.github.io/google-auth-clientid/</link><guid isPermaLink="false">https://devjoylee.github.io/google-auth-clientid/</guid><pubDate>Sat, 12 Mar 2022 00:00:00 GMT</pubDate><content:encoded>&lt;h2&gt;👨‍💼 Google 사용자 인증 정보 생성&lt;/h2&gt;
+&lt;p&gt;외부 사이트에서 &lt;strong&gt;구글 로그인&lt;/strong&gt;과 같은 구글 API를 사용하기 위해서는 사용자 인증 정보(OAuth 클라이언트 ID)를 발급받아야 한다. 발급 절차는 아래와 같다.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Google Cloud Platform에 접속하여 새 프로젝트를 생성한다. 👉 &lt;a href=&quot;https://console.cloud.google.com/&quot;&gt;Google Cloud 바로가기&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;img src=&apos;https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&amp;amp;fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FpqhCs%2FbtqEfqOwE4m%2FGkOTrLn4NbAfeiAjsxoGv0%2Fimg.png&apos;&gt;
+&lt;ol start=&quot;2&quot;&gt;
+&lt;li&gt;프로젝트 이름을 입력하고 만들기버튼을 클릭한다.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;img src=&apos;https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&amp;amp;fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FcOsekD%2FbtqEh7fFWxR%2FXsuWZeC0Lk7SKbyNH3109k%2Fimg.png&apos;&gt;
+&lt;ol start=&quot;3&quot;&gt;
+&lt;li&gt;상단 헤더에서 프로젝트를 선택한 후, &lt;strong&gt;OAuth 동의 화면(Consent Screen)&lt;/strong&gt; 페이지로 이동한다.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;img src=&apos;https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&amp;amp;fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FnmxM8%2FbtqEgRxTvum%2FZCKCxA5unhivyyONHgkLOK%2Fimg.png&apos;&gt;
+&lt;ol start=&quot;4&quot;&gt;
+&lt;li&gt;User Type을 &lt;strong&gt;&quot;외부(External)&quot;&lt;/strong&gt;로 설정한 후 만들기 클릭.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;img src=&apos;https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&amp;amp;fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FeehnBK%2FbtqEeYLskR2%2FnNyZdt539SquPkYSOXnMuk%2Fimg.png&apos;&gt;
+&lt;ol start=&quot;5&quot;&gt;
+&lt;li&gt;앱이름과 이메일을 추가하고, 이 단계에서 사진 우측과 같은 OAuth 동의 화면을 커스텀 할 수 있다.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;img src=&apos;https://medipress.co.kr/wp-content/uploads/2020/12/05-google-developer-info-1.png&apos;&gt;
+&lt;ol start=&quot;6&quot;&gt;
+&lt;li&gt;사용자 인증 정보 (Credentials) 탭으로 이동한 후, &lt;strong&gt;사용자 인증 정보 만들기 &gt; OAuth 클라이언트 ID&lt;/strong&gt;를 차례로 클릭한다.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;img src=&apos;https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&amp;amp;fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FkK3SP%2FbtqEhPM33Ea%2FRx5N4x4eAjK2jQitCXmKQK%2Fimg.png&apos;&gt;
+&lt;ol start=&quot;6&quot;&gt;
+&lt;li&gt;애플리케이션 유형으로 &quot;웹 애플리케이션&quot; 선택하고, 애플리케이션 이름을 입력한다. 구글 로그인을 적용할 사이트의 주소를 승인된 자바스크립트 원본과 승인된 리다이렉션 URI에 입력한다.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;img src=&apos;https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&amp;amp;fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2Fb7aIi4%2FbtqEfYjVyGX%2FERXAsc5YeP7euAdO4ke7X0%2Fimg.png&apos;&gt;
+&lt;ol start=&quot;6&quot;&gt;
+&lt;li&gt;가장 아래 &apos;생성&apos; 버튼을 클릭하면, 클라이언트 ID와 비밀번호를 확인할 수 있다!&lt;/li&gt;
+&lt;/ol&gt;
+&lt;img src=&apos;https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&amp;amp;fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FdvMtfd%2FbtqEfYxtVps%2F98p6Wj9U72bZDKdaBcthG0%2Fimg.png&apos;&gt;
+&lt;br /&gt;
+&lt;br /&gt;
+&lt;blockquote&gt;
+&lt;p&gt;REFERENCE&lt;br /&gt; 구글 로그인 Client ID와 Client Secret Key 설정방법 &lt;a href=&quot;https://medipress.co.kr/archives/2147&quot;&gt;https://medipress.co.kr/archives/2147&lt;/a&gt;&lt;/p&gt;
 &lt;/blockquote&gt;</content:encoded></item><item><title><![CDATA[OAuth 2.0 흐름 파악하기]]></title><description><![CDATA[✔ 등록 (Register) Resource Server에 새로운 Client를 등록합니다. Client ID : 애플리케이션 식별 ID (노출 가능) Client Secret : 식별 비밀번호 (노출 X) Authorized Redirect URLs…]]></description><link>https://devjoylee.github.io/auth-flow/</link><guid isPermaLink="false">https://devjoylee.github.io/auth-flow/</guid><pubDate>Thu, 10 Mar 2022 00:00:00 GMT</pubDate><content:encoded>&lt;h2&gt;✔ 등록 (Register)&lt;/h2&gt;
 &lt;p&gt;Resource Server에 새로운 Client를 등록합니다.&lt;/p&gt;
 &lt;ul&gt;
