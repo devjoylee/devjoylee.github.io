@@ -279,7 +279,7 @@ data-styled.g66[id="Article-sc-1tzp0ke-0"]{content:"fbRcHz,"}/*!sc*/
 <li><code class="language-text">.env.local</code> 에 발급받은 코드를 추가한다 (경로 : <code class="language-text">pages/api/auth/[...nextauth].js</code>) <br/>
 여기서 <code class="language-text">&lt;password></code>는 처음에 사용자 추가할 때 발급받은 비밀번호로 바꿔주고 <code class="language-text">myFirstDatabase</code>는 앱이름으로 교체</li>
 </ol>
-<div class="gatsby-highlight" data-language="text"><pre class="language-text"><code class="language-text">MONGODB_URI=mongodb+srv://admin:6cp2Pv6tdc0qsyJn@cluster0.upmnolv.mongodb.net/linkedin-clone?retryWrites=true&amp;w=majority</code></pre></div>
+<div class="gatsby-highlight" data-language="text"><pre class="language-text"><code class="language-text">MONGODB_URI=mongodb+srv://admin:&lt;password>@cluster0.upmnolv.mongodb.net/myFirstDatabase?retryWrites=true&amp;w=majority</code></pre></div>
 <h2>5️⃣ 미들웨어 추가하기</h2>
 <p>미들웨어(Middleware)는 요청이 완료되기 전에 코드를 호출할 수 있는 기능을 제공한다.<br/>
 덕분에 응답을 수정하고, 리다이렉트하고, 헤더를 추가하고, 심지어 HTML을 스트리밍할 수 있다. <br/>
