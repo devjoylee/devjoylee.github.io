@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
-Sitemap: https://devjoylee.github.io/sitemap/sitemap-index.xml
+Sitemap: https://devjoylee.github.io/sitemap-index.xml
 Host: https://devjoylee.github.io
