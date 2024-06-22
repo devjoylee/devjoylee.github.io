@@ -27,7 +27,7 @@ series: "프론트엔드 개발환경"
 
 ![image](https://images.velog.io/images/joyact/post/d47c7828-ea1a-4844-bf88-d950f185899c/image.png)
 
-**웹팩(Webpack)**은 여러개 파일을 하나의 파일로 합쳐주는 번들러(bundler)입니다. 웹팩을 사용하면 여러개의 javascript 파일을 하나로 합쳐줌으로써 지저분한 `<script>` 태그의 반복 사용을 줄일 수 있고 효율적인 디버깅이 가능해집니다.
+**웹팩(Webpack)** 은 여러개 파일을 하나의 파일로 합쳐주는 번들러(bundler)입니다. 웹팩을 사용하면 여러개의 javascript 파일을 하나로 합쳐줌으로써 지저분한 `<script>` 태그의 반복 사용을 줄일 수 있고 효율적인 디버깅이 가능해집니다.
 
 또 다른 웹팩의 기능으로는 변환(transforming) 기능이 있습니다. ES6와 같은 모던 javascript를 ES5 형식으로 변환하고, Sass를 CSS로 변환시킴으로써 모든 브라우저가 이해할 수 있는 환경을 자체적으로 만들어냅니다.
 

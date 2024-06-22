@@ -56,11 +56,11 @@ const checkIsScrollAtBottom = () => {
 }
 
 const SeriesList = ({ seriesList }) => {
-  const [seriesCount, setSeriesCount] = useState(10)
+  const [seriesCount, setSeriesCount] = useState(12)
 
   const handleMoreLoad = _.throttle(() => {
     if (checkIsScrollAtBottom() && seriesCount < seriesList.length) {
-      setTimeout(() => setSeriesCount(seriesCount + 10), 300)
+      setTimeout(() => setSeriesCount(seriesCount + 12), 300)
     }
   }, 250)
 
@@ -73,7 +73,7 @@ const SeriesList = ({ seriesList }) => {
   }, [seriesCount, seriesList])
 
   useEffect(() => {
-    setSeriesCount(10)
+    setSeriesCount(12)
   }, [seriesList])
 
   return (
