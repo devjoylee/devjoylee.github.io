@@ -58,8 +58,8 @@ export const pageQuery = graphql`
         title
       }
     }
-    allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
-      group(field: frontmatter___tags) {
+    allMarkdownRemark(sort: { frontmatter: { date: DESC } }) {
+      group(field: { frontmatter: { tags: SELECT } }) {
         fieldValue
         totalCount
       }

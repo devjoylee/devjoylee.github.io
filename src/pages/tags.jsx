@@ -42,7 +42,7 @@ const TagsPage = ({ data }) => {
     }
 
     setFilteredPosts(
-      filter(posts, post => post.frontmatter.tags.indexOf(selected) !== -1)
+      filter(posts, post => post.frontmatter.tags.indexOf(selected) !== -1),
     )
   }, [selected])
 
@@ -97,8 +97,8 @@ export const pageQuery = graphql`
         title
       }
     }
-    allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
-      group(field: frontmatter___tags) {
+    allMarkdownRemark(sort: { frontmatter: { date: DESC } }) {
+      group(field: { frontmatter: { tags: SELECT } }) {
         fieldValue
         totalCount
       }
