@@ -90,7 +90,9 @@ npx lint-staged
 4. lint-staged가 실행되어 스테이지 상태의 파일들에 대해 eslint와 prettier 검사를 수행한다.
 5. 에러 혹은 경고가 발견되면 커밋이 취소되고 오류 메시지가 출력된다.
 
+<img width="870" alt="" src="https://github.com/devjoylee/devjoylee.github.io/assets/68415905/ea0d4b38-80b6-41bd-986f-8d919b5411b2">
+
 <br/>
 <br/>
 
-> REFERENCE<br /> How to Install Commitlint & Husky [2024] https://medium.com/@abpeter14/how-to-install-commitlint-husky-2024-f1157f14006f
+> REFERENCE<br /> How to Install Commitlint & Husky [2024] https://medium.com/@abpeter14/how-to-install-commitlint-husky-2024-f1157f14006f > <br/>ESLint with VSCode, Prettier, Husky and React https://www.youtube.com/watch?v=ZXW6Jn6or1w&t=159s
