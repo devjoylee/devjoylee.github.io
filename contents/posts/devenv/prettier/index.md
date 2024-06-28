@@ -1,8 +1,8 @@
 ---
 title: "협업을 위한 프로젝트 설정 - Prettier"
 description: "협업을 위한 프로젝트 설정 - Prettier"
-date: 2024-06-12
-update: 2024-06-12
+date: 2024-05-12
+update: 2024-05-12
 tags:
   - frontend
   - development

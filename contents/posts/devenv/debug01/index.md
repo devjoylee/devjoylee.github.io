@@ -77,4 +77,4 @@ DevTools의 Network 탭을 이용하면 console.log를 사용하지 않아도 �
 <br />
 <br />
 
-> REFERENCE<br /> 브라우저 디버깅하는 방법 [2024] https://www.youtube.com/watch?v=C4poqiG8ulM
+> REFERENCE<br /> 아직도 console.log써서 디버깅 한다고? | 브라우저 디버깅하는 법 https://www.youtube.com/watch?v=C4poqiG8ulM

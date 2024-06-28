@@ -1,8 +1,8 @@
 ---
 title: "협업을 위한 프로젝트 설정 - husky + lint-staged"
 description: "협업을 위한 프로젝트 설정 - husky + lint-staged"
-date: 2024-06-21
-update: 2024-06-21
+date: 2024-05-21
+update: 2024-05-21
 tags:
   - frontend
   - development

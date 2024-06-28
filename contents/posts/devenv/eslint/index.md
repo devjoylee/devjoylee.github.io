@@ -1,8 +1,8 @@
 ---
 title: "협업을 위한 프로젝트 설정 - ESLint"
 description: "협업을 위한 프로젝트 설정 - ESLint"
-date: 2024-06-10
-update: 2024-06-10
+date: 2024-05-10
+update: 2024-05-10
 tags:
   - frontend
   - development

@@ -1,6 +1,6 @@
 ---
-title: "React Native 꼭 알아야할 주요 특징"
-description: "React Native 꼭 알아야할 주요 특징"
+title: "[React Native] 꼭 알아야할 주요 특징"
+description: "[React Native] 꼭 알아야할 주요 특징"
 date: 2023-02-20
 update: 2023-02-20
 tags:
@@ -126,4 +126,5 @@ expo install expo-document-picker
 
 <br/><br/>
 
-> REFERENCE <br/> Nomad Coder https://nomadcoders.co/react-native-for-beginners/lobby
+> REFERENCE <br/>
+> React Native 공식 문서 https://reactnative.dev/docs/getting-started <br/> Expo 공식 문서 https://docs.expo.dev/ <br/> Nomad Coder https://nomadcoders.co/react-native-for-beginners/lobby
