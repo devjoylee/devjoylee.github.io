@@ -55,7 +55,7 @@ npm init @eslint/config
 
 - 실행하기 : package.json 파일의 scripts란에 아래 명령어를 추가한 후, 터미널에서 `npm run lint` 로 실행시킨다.
 
-```bash
+```json
   "scripts": {
     // ...
     "lint": "eslint .",

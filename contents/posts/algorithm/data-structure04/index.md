@@ -2,7 +2,7 @@
 title: "[Data Structure] List - Array & Dynamic Array "
 description: "[Data Structure] List - Array & Dynamic Array "
 date: 2024-02-16
-update: 2024-01-16
+update: 2024-02-16
 tags:
   - datastructure
 series: "Data Structure"
@@ -34,22 +34,21 @@ Array List는 말 그대로 배열을 기반으로 만들어진 자료구조이�
 int arr[5] = {3, 7, 4, 2, 6} // size가 5인 int형 배열 선언
 ```
 
-배열이 선언되면 데이터를 저장할 메모리 공간을 먼저 확보한다.<br/> 
-→ int형 데이터 5개를 가진 배열을 만들기 위해서는 총 20 byte의 공간이 필요하다. `4byte(int형 데이터) * 5(size) = 20 byte`<br/> 
+배열이 선언되면 데이터를 저장할 메모리 공간을 먼저 확보한다.<br/>
+→ int형 데이터 5개를 가진 배열을 만들기 위해서는 총 20 byte의 공간이 필요하다. `4byte(int형 데이터) * 5(size) = 20 byte`<br/>
 → 첫 번째 값부터 순차적으로 메모리에 저장한다.
 
 <img width="1000" alt="" src="https://github.com/devjoylee/devjoylee/assets/68415905/4030bf8d-0d9f-4672-9eb3-400578d18288">
-
 
 ### Random Access
 
 **Random Access**는 자료 구조에서 특정 데이터에 직접 접근할 수 있는 능력을 의미한다.
 
-배열(Array)은 대표적인 random access 가능한 데이터 구조이다. 일반적으로 데이터에 접근하려면 해당 데이터의 메모리 주소값을 알아야 한다. 배열에 저장된 값은 메모리에 연속적으로 할당되기 때문에 배열의 첫 주소값만 알면 어떤 index에도 바로 접근할 수 있다. `(첫 주소값 + index)` 
+배열(Array)은 대표적인 random access 가능한 데이터 구조이다. 일반적으로 데이터에 접근하려면 해당 데이터의 메모리 주소값을 알아야 한다. 배열에 저장된 값은 메모리에 연속적으로 할당되기 때문에 배열의 첫 주소값만 알면 어떤 index에도 바로 접근할 수 있다. `(첫 주소값 + index)`
 
 즉 O(1)의 시간복잡도로 접근이 가능하다.
 
-<br/> 
+<br/>
 
 ## 2. Dynamic Array
 
@@ -72,13 +71,13 @@ int arr[5] = {3, 7, 4, 2, 6} // size가 5인 int형 배열 선언
 
 배열 크기를 명시하지 않아도 되는 dynamic array는 코딩테스트에서 자주 사용된다. 그 예로 Python에는 dynamic array로 구현된 `list` 자료형이 있다. `list`의 연산과 해당하는 시간복잡도는 아래와 같다.
 
-|  | Static array | Dynamic array |
-| --- | --- | --- |
-| access / update | $O(1)$ | $O(1)$ |
-| insert_back | $O(1)$ | amortized $O(1)$ |
-| delete_back | $O(1)$ | $O(1)$ |
-| insert_at | $O(n)$ | $O(n)$ |
-| delete_at | $O(n)$ | $O(n)$ |
+|                 | Static array | Dynamic array    |
+| --------------- | ------------ | ---------------- |
+| access / update | $O(1)$       | $O(1)$           |
+| insert_back     | $O(1)$       | amortized $O(1)$ |
+| delete_back     | $O(1)$       | $O(1)$           |
+| insert_at       | $O(n)$       | $O(n)$           |
+| delete_at       | $O(n)$       | $O(n)$           |
 
 **리스트의 선언** : `a = [1, 2, 3]`
 
@@ -91,15 +90,11 @@ int arr[5] = {3, 7, 4, 2, 6} // size가 5인 int형 배열 선언
 
 - 마지막에 원소 추가 : `a.append(1)` → $O(1)$
 - 중간에 원소 추가 : `a.insert(2,10)` → $O(n)$
-    
-    ⇒ 2번째 index에 10을 추가한다
-    
+  ⇒ 2번째 index에 10을 추가한다
 
 **리스트 원소 삭제**
 
 - 마지막 원소 삭제 : `a.pop()` → $O(1)$
 - 중간 원소 삭제 : `a.pop(2)` / `a.remove(2)` → $O(n)$
-    
-    ⇒ `pop(2)` : 2번째 index에 있는 값을 삭제
-    
-    ⇒ `remove(2)` : 값 ‘2’를 찾아서 삭제. 없으면 error
+  ⇒ `pop(2)` : 2번째 index에 있는 값을 삭제
+  ⇒ `remove(2)` : 값 ‘2’를 찾아서 삭제. 없으면 error
