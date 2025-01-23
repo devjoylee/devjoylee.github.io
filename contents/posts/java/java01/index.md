@@ -1,10 +1,11 @@
 ---
-title: "[Java] 기초 개념 : 변수/자료형/접근제어자"
-description: "[Java] 기초 개념 : 변수/자료형/접근제어자"
+title: "[Java] 기초 개념 : 변수/자료형/접근제어자/static"
+description: "[Java] 기초 개념 : 변수/자료형/접근제어자/static"
 date: 2025-01-22
 update: 2025-01-22
 tags:
   - java
+  - fullstack
 series: "Java"
 ---
 
