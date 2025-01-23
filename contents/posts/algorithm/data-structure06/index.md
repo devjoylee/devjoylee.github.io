@@ -1,159 +1,90 @@
 ---
-title: "[Data Structure] 자료구조에서 클래스란?"
-description: "[Data Structure] 자료구조에서 클래스란?"
-date: 2024-07-07
-update: 2024-07-07
+title: "[Data Structure] Queue & Stack"
+description: "[Data Structure] Queue & Stack"
+date: 2024-04-20
+update: 2024-04-20
 tags:
   - datastructure
 series: "Data Structure"
 ---
 
-## 클래스로 만드는 객체형 자료구조
+## 큐 (Queue)
 
-클래스는 객체 지향 프로그래밍(OOP)에서 사용되는 중요한 개념이다. 클래스는 객체를 생성하기 위한 템플릿으로 객체의 속성과 메소드를 정의한다. JavaScript에서 클래스는 ES6부터 도입되었으며 객체의 생성과 관리를 보다 구조화된 방식으로 제공한다.
+**Queue**란 먼저 저장한 데이터를 먼저 출력하는 FIFO(First In First Out)형식의 선형 자료구조이다.<br>
+queue의 뒤(rear)에 데이터를 추가하는 것을 enqueue, 앞(front)에서 데이터를 꺼내는 것을 dequeue라고 한다.
 
-### 용어 정리
-
-- 클래스 (Class): 객체를 만드는 템플릿
-- 인스턴스 (Instance): 클래스(템플릿)로 생성된 각각의 객체
-- 생성자 함수 (Constructor): 객체 초기화 함수. 인스턴스가 만들어질 때 호출된다.
-- 프로퍼티 (Property): 객체의 속성 및 데이터
-- 메소드 (Method): 객체의 프로퍼티를 조작하거나 동작을 수행하는 함수
+<img src="https://github.com/user-attachments/assets/f1acedb1-4714-4b65-abe8-baf9295e42b1" alt="" width="700" style="margin-left:0" />
 
 ### 사용 예시
 
-클래스로 Stack 자료구조를 만들며 차근차근 살펴보자!
+- 너비우선탐색 (BFS)
 
-1. `class` + `클래스 명` 의 형식으로 클래스를 정의한다.
+### list 기반 구현
 
-```js
-class Stack {
-  // ...
-}
+- how to enqueue → `.append()` : 시간복잡도 $O(1)$
+- how to dequeue → `.pop(0)` : 앞에서 꺼낸 후, 남아 있는 모든 요소의 인덱스를 한칸씩 앞으로 당겨야하므로 $O(n)$
+
+```python
+q = []
+
+# enqueue
+q.append(1) # [1]
+q.append(2) # [1, 2]
+q.append(3) # [1, 2, 3]
+
+# dequeue
+q.pop(0) # [2, 3]
+q.pop(0) # [3]
 ```
 
-2. `new` 키워드로 클래스를 호출하여 새 인스턴스 객체를 만든다.
+### Linked list 기반 구현
 
-```js
-let instanceA = new Stack() // instanceA {}
-let instanceB = new Stack() // instanceB {}
+파이썬에서 `deque` 라이브러리를 쓰면 queue를 쉽게 만들 수 있다. `deque`는 앞, 뒤 양방향에서 데이터의 삽입과 제거가 가능한 자료구조이다. `deque`는 **doubly linked list**로 구현 되어 있어 모든 연산이 $O(1)$의 시간 복잡도를 가지므로 list 기반 구현 queue보다 훨씬 효율적이다.
+
+|      | 맨 앞(왼쪽)  | 맨 뒤(오른쪽) |
+| ---- | ------------ | ------------- |
+| 삽입 | appendleft() | append()      |
+| 제거 | popleft()    | pop()         |
+
+<br>
+
+```python
+from collections import deque
+
+q = deque()
+
+# enqueue
+q.append(1) # [1]
+q.append(2) # [1, 2]
+q.append(3) # [1, 2, 3]
+q.appendleft(0) # [0, 1, 2, 3]
+
+# dequeue
+q.popleft() # [1, 2, 3]
+q.popleft() # [2, 3]
+q.pop() # [2]
 ```
 
-3.  생성자 함수 `constructor()`를 추가한다. 생성자 함수는 객체의 초기 프로퍼티를 설정하며 인스턴스가 생성될 때 자동으로 호출된다. 프로퍼티는 `this.속성명`의 형태로 작성한다.
+## 스택 (Stack)
 
-```js
-class Stack {
-  constructor() {
-    this.items = [] // 인스턴스 생성시 호출
-  }
-}
+**Stack**이란 마지막에 저장한 데이터를 먼저 출력하는 LIFO(Last In First Out)형식의 선형 자료구조이다.<br>
+값을 추가할 때는 `push`, 값을 꺼낼 때는 `pop`을 사용한다.
 
-let instanceA = new Stack() // instanceA { items : [] }
-let instanceB = new Stack() // instanceB { items : [] }
-```
-
-4. 클래스에 메소드를 추가하여 객체의 동작을 정의하고 인스턴스를 사용해서 메소드를 호출한다.
-
-```js
-class Stack {
-  constructor() {
-    this.items = [] // 인스턴스 생성시 호출
-  }
-
-  push(element) {
-    // 스택에 요소를 추가하는 메소드
-    this.items.push(element)
-  }
-
-  isEmpty() {
-    // 스택이 비어 있는지 확인하는 메소드
-    return this.items.length === 0
-  }
-}
-
-let instanceA = new Stack() // instanceA { items : [] }
-let instanceB = new Stack() // instanceB { items : [] }
-
-instanceA.push("apple") // instanceA { items : ['apple'] }
-instanceA.push("orange") // instanceA { items : ['apple', 'orange'] }
-
-instanceA.isEmpty() // false
-instanceB.isEmpty() // true
-```
-
-## 메소드 종류
-
-클래스에서 메소드는 두 가지 유형으로 나뉜다: 인스턴스 (instance) 메소드와 정적 (static) 메소드.
-
-### 인스턴스 메소드
-
-인스턴스에서 호출하는 메소드이다. 즉, 객체를 만들어서 그 객체를 통해 호출할 수 있는 함수이다. 객체의 데이터를 처리하거나 객체와 관련된 동작을 수행할 때 사용한다.
-
-```js
-class User {
-  constructor(name) {
-    this.name = name
-  }
-
-  // 인스턴스 메소드
-  greet() {
-    return `Hello, ${this.name}!`
-  }
-}
-
-const user1 = new User("Alice")
-console.log(user1.greet()) // "Hello, Alice!"
-```
-
-### 정적 메소드
-
-정적 메소드는 클래스의 인스턴스 없이 클래스 자체에서 호출할 수 있는 메소드이다. `static` 키워드를 사용하여 정의되며 클래스 레벨에서 동작하는 함수로 인스턴스에서는 호출할 수 없다. 객체에 의존하지 않는 범용적인 기능을 구현할 때 사용한다.
-
-```js
-class MathHelper {
-  // 정적 메소드
-  static add(a, b) {
-    return a + b
-  }
-}
-
-console.log(MathHelper.add(5, 3)) // 8
-```
+<img src="https://github.com/user-attachments/assets/cb17e027-3139-4cec-9152-b97bb2d53965" alt="" width="700" style="margin-left:0" />
 
 ### 사용 예시
 
-- `printScore()`: 각 학생의 이름과 점수를 출력하는 **인스턴스 메소드**이다.
-- `compareScores(A, B)`: 두 학생의 점수를 비교하여 차이를 반환하는 **정적 메소드**이다.
+- 깊이우선탐색 (DFS)
 
-인스턴스 메소드는 각 학생 인스턴스 레벨에서 호출되어 해당 학생의 정보를 처리하고 출력하며, 정적 메소드는 클래스 레벨에서 두 학생 객체의 점수를 비교하는 기능을 가진다.
+스택은 list 를 사용해도 가장 뒤에서 데이터를 삽입, 삭제 하므로 시간복잡도 $O(1)$ 로 동일하다.
 
-```js
-class Student {
-  constructor(name, score) {
-    this.name = name
-    this.score = score
-  }
+```python
+s = []
 
-  // 인스턴스 메소드: 점수 출력
-  printScore() {
-    console.log(`${this.name}의 점수는 ${this.score}점 입니다.`)
-  }
+# push
+s.append(1) # [1]
+s.append(2) # [1, 2]
 
-  // 정적 메소드: 점수 비교
-  static compareScores(studentA, studentB) {
-    return studentA.score - studentB.score
-  }
-}
-
-// 학생 인스턴스 생성
-const student1 = new Student("Alice", 85)
-const student2 = new Student("Bob", 92)
-
-// 인스턴스 메소드 호출
-student1.printScore() // "Alice의 점수는 85점 입니다."
-student2.printScore() // "Bob의 점수는 92점 입니다."
-
-// 정적 메소드 호출
-const scoreComparison = Student.compareScores(student1, student2)
-console.log(`점수 차이: ${scoreComparison}`) // "점수 차이: -7"
+# pop
+s.pop() # [1]
 ```

@@ -1,19 +1,19 @@
 ---
-title: "싸이월드 클론 built in NextJS"
+title: "싸이월드 클론 built in NextJS (with 넘블)"
 description: "싸이월드 클론"
 date: 2022-11-10
 update: 2022-11-10
 tags:
   - typescript
   - react
-series: "Project Memoirs"
+series: "원티드 프리온보딩 회고"
 ---
 
 <img src="https://user-images.githubusercontent.com/68415905/201012943-51174d9b-43fa-4103-80da-1469f2aed925.png" alt="" width="800" align="center" />
 
 ## 😎 프로젝트 소개
 
-> NextJS와 GraphQL로 빌드한 싸이월드 클론 프로젝트
+> NUMBLE 플랫폼에서 진행한 Nextjs 챌린지에 참가했다. NextJS와 GraphQL로 싸이월드 클론 프로젝트를 진행했다.
 
 - 제작 기간 : 2022.10.14 - 2022.11.03
 - [Github Repo](https://github.com/devjoylee/cyworld)
@@ -214,3 +214,11 @@ const BGMList = [
 ```
 
 <br />
+
+## 🎉 프로젝트가 끝난 후..
+
+정해진 요구사항과 기능 등을 모두 구현하였고 그 결과 챌린지에서 1위를 하게되었다!
+
+[수상 결과 페이지 바로가기!](https://www.notion.so/joylee-566fba934c98433da48552f95f375267?pvs=21)
+
+<img src="https://github.com/user-attachments/assets/340ea0bc-9b71-4166-a17f-871b4fd9d7df" alt="" width="400" style="margin-left:0" />

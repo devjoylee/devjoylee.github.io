@@ -8,7 +8,7 @@ tags:
   - typescript
   - react
   - heroku
-series: "Project Memoirs"
+series: "원티드 프리온보딩 회고"
 ---
 
 ## ☝ 프로젝트 시작하기 전

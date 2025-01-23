@@ -73,7 +73,7 @@ const SeriesList = ({ seriesList }) => {
   }, [seriesCount, seriesList])
 
   useEffect(() => {
-    setSeriesCount(12)
+    setSeriesCount(100)
   }, [seriesList])
 
   return (

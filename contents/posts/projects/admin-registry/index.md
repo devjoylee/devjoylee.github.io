@@ -8,7 +8,7 @@ tags:
   - javascript
   - react
   - netlify
-series: "Project Memoirs"
+series: "원티드 프리온보딩 회고"
 ---
 
 ## ☝ 프로젝트 시작하기 전
@@ -121,7 +121,7 @@ const getImageUrl = e => {
 ```jsx
 export const validation = required => {
   const inVaild = Object.keys(required).filter(
-    key => !required[key] || required[key].length === 0
+    key => !required[key] || required[key].length === 0,
   )
 
   const inVaildList = inVaild.map(el => {
@@ -157,7 +157,7 @@ export const useForm = requiredList => {
         [name]: value,
       }))
     },
-    [setRequired]
+    [setRequired],
   )
 
   const handleClick = () => {
@@ -167,7 +167,7 @@ export const useForm = requiredList => {
     } else {
       alert(
         `필수 값을 모두 입력하세요 ❗❗
-👉 ${inVaild.join(", ")}을(를) 추가해주세요!`
+👉 ${inVaild.join(", ")}을(를) 추가해주세요!`,
       )
     }
   }
