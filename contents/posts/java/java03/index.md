@@ -112,8 +112,20 @@ public class Dog extends Animal {
 
 자바에서는 다중 상속 대신 **인터페이스**를 사용하여 이러한 문제를 해결한다.
 
+- 인터페이스: "이런 기능이 있어야 해요"라는 약속
+- `implements`: "네, 그 기능을 만들게요"라는 실천
+
 ```java
-// 인터페이스를 통한 다중 상속 대체
+interface 날수있는 {}
+interface 힘이센 {}
+interface 빠른 {}
+
+class 슈퍼맨 implements 날수있는, 힘이센, 빠른 {
+    // 여러 능력을 동시에 구현할 수 있음
+}
+```
+
+```java
 interface Animal {
     void eat();
 }
@@ -122,6 +134,7 @@ interface Pet {
     void play();
 }
 
+// Dog 클래스는 Animal과 Pet 인터페이스를 모두 구현(implements)
 public class Dog implements Animal, Pet {
     @Override
     public void eat() {
