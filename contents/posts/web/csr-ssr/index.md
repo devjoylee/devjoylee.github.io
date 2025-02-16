@@ -4,8 +4,9 @@ description: "브라우저의 렌더링 종류 CSR vs SSR vs PR"
 date: 2022-08-12
 update: 2022-08-12
 tags:
+  - web
   - webbrowser
-series: "Web Browser"
+series: "Web Architecture"
 ---
 
 ## 💻 CSR (Client Side Rendering)

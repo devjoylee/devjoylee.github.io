@@ -4,8 +4,9 @@ description: "브라우저의 렌더링 과정"
 date: 2022-08-11
 update: 2022-08-11
 tags:
+  - web
   - webbrowser
-series: "Web Browser"
+series: "Web Architecture"
 ---
 
 ## Brower Rendering
